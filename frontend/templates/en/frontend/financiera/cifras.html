@@ -1,0 +1,579 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+    <section id="content">
+        <div class="content-wrap" style="padding: 50px 0 80px;">
+
+            <div class="container clearfix">
+
+                <div class="col-lg-12">
+                    <div id="fundamentales">
+
+                      <select class="form-control drop-corto" id="select_grafico">
+                          <option value="g1" selected>Resultados</option>
+                          <option value="g2">Situación financiera</option>
+                          <option value="g3">Indicadores operativos*</option>
+                          <option value="g4">Razones de liquidez y apalancamiento*</option>
+
+                      </select>
+
+                      <div div id="g1" class="hidden" data-divG="chart_resultados">
+                        <br>
+                      <!---<h3 class="text portada11">Resultados</h3>-->
+                        <div class="contentTable overflow-auto">
+                            <table id="g1promigas" class="table table-bordered test table-striped">
+                                <thead class="thead-pink">
+                                <tr align="center">
+                                    <td class="col-large width-title" style="text-align: left;"><b>(miles de
+                                        pesos)</b>
+                                    </td>
+                                    <td class="col-small width-valores"><b>9M20</b></td>
+                                    <td class="col-small width-valores"><b>2019</b></td>
+                                    <td class="col-small width-valores"><b>2018</b></td>
+                                    <td class="col-small width-valores"><b>2017</b></td>
+                                </tr>
+                                </thead>
+                                <tbody align="center">
+                                <tr>
+                                    <td style="text-align: left">Ingresos por arrendamiento de inmuebles</td>
+                                    <td></td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: left">Ingresos totales
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Costos y gastos de operación
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Valuación de propiedades de inversión
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Utilidad de operación
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Resultados financieros
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Impuestos a la utilidad
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Utilidad neta
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">NOI
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: left">EBITDA ajustado
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                          </div>
+{#                          <div id="chart_resultados" class="char-fundamentales chartdiv"></div>#}
+                        </div>
+
+                        <div div id="g2" class="hidden" data-divG="chart_situacion">
+                          <br>
+                        <!---<h3 class="text portada11">Situación Financiera</h3>-->
+                        <div class="contentTable overflow-auto">
+                            <table id="g1promigas" class="table table-bordered test table-striped">
+                                <thead class="thead-pink">
+                                <tr align="center">
+                                    <td class="col-large width-title" style="text-align: left;"><b>
+                                        (miles de pesos)</b>
+                                    </td>
+                                    <td class="col-small width-valores"><b>9M20</b></td>
+                                    <td class="col-small width-valores"><b>2019</b></td>
+                                    <td class="col-small width-valores"><b>2018</b></td>
+                                    <td class="col-small width-valores"><b>2017</b></td>
+                                </tr>
+                                </thead>
+                                <tbody align="center">
+                                <tr>
+                                    <td style="text-align: left">Efectivo y equivalentes
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total activo circulante
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Propiedades de inversión
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total activo no circulante
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total de activos
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Porción de deuda circulante
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total pasivo circulante
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Porción de deuda no circulante
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total pasivo no circulante
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total de pasivos
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Utilidades acumuladas
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total de capital contable
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total pasivo y capital contable
+
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                          </div>
+{#                          <div id="chart_situacion" class="char-fundamentales chartdiv"></div>#}
+                        </div>
+
+                        <div div id="g3" class="hidden" data-divG="chart_operativos">
+                          <br>
+                        <!---<h3 class="text portada11">Indicadores operativos* </h3>-->
+                        <div class="contentTable overflow-auto">
+                            <table id="g1promigas" class="table table-bordered test table-striped">
+                                <thead class="thead-pink">
+                                <tr align="center">
+                                    <td class="col-large width-title" style="text-align: left;"><b>
+                                        (%)</b>
+                                    </td>
+                                    <td class="col-small width-valores"><b>9M20</b></td>
+                                    <td class="col-small width-valores"><b>2019</b></td>
+                                    <td class="col-small width-valores"><b>2018</b></td>
+                                    <td class="col-small width-valores"><b>2017</b></td>
+                                </tr>
+                                </thead>
+                                <tbody align="center">
+                                <tr>
+                                    <td style="text-align: left">Crecimiento en ingresos totales
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Crecimiento en NOI
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Crecimiento en EBITDA
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Utilidad de operación/ingresos totales
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Utilidad neta/ingresos totales
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">NOI/ingresos totales
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">EBITDA/ingresos totales
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                          </div>
+{#                          <div id="chart_operativos" class="char-fundamentales chartdiv"></div>#}
+                      <p>* Los cálculos podrían presentar variaciones de acuerdo con otras metodologías.</p>
+
+                        </div>
+
+                        <div div id="g4" class="hidden" data-divG="chart_razones">
+                          <br>
+                        <!---<h3 class="text portada11">Razones de liquidez y apalancamiento* </h3>-->
+
+                        <div class="contentTable overflow-auto">
+                            <table id="g1promigas" class="table table-bordered test table-striped">
+                                <thead class="thead-pink">
+                                <tr align="center">
+                                    <td class="col-large width-title" style="text-align: left;"><b>(veces)</b>
+                                    </td>
+                                    <td class="col-small width-valores"><b>9M20</b></td>
+                                    <td class="col-small width-valores"><b>2019</b></td>
+                                    <td class="col-small width-valores"><b>2018</b></td>
+                                    <td class="col-small width-valores"><b>2017</b></td>
+                                </tr>
+                                </thead>
+                                <tbody align="center">
+                                <tr>
+                                    <td style="text-align: left">Total activo circulante/total pasivo circulante
+
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">Total activo circulante/total de pasivos
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                </tr>
+<tr>
+                                    <td style="text-align: left">Total pasivo no circulante/total de capital contable
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                </tr>
+<tr>
+                                    <td style="text-align: left">Total de pasivos/total de activos (%)
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                </tr>
+<tr>
+                                    <td style="text-align: left">Deuda Neta/EBITDA
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                    <td>
+</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+{#                            <div id="chart_razones" class="char-fundamentales chartdiv"></div>#}
+                            <p>* Los cálculos podrían presentar variaciones de acuerdo con otras metodologías.</p>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block otherscripts %}
+
+
+
+    <script src="{% static 'javascripts/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/amstock.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/themes/iredge.js' %}"></script>
+    <script src="{% static 'javascripts/fundamentales.js' %}"></script>
+
+
+{% endblock %}

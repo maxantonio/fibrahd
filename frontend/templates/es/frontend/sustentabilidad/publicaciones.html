@@ -1,0 +1,82 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/dataTables.bootstrap4.min.css' %}"/>
+    <style>
+        .dataTables_length {
+            display: none;
+        }
+    </style>
+{% endblock %}
+
+
+{% block wrapper %}
+    <div class="container content-wrap">
+        <div class="row container">
+            <table class="table dataTable no-border-bottom">
+                <thead>
+                <tr>
+                    <th>
+                        Documento
+                    </th>
+                    <th>
+                        Fecha de publicación
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for comunicado in comunicados %}
+                    <tr>
+                        <td class="d-flex">
+                            <div><i role="presentation" class="fa fa-file-text mr-2"> </i></div>
+                            <a aria-label="this opens in a new tab" target="_blank"
+                               href="{{ docs_base_url }}{{ comunicado.documento }}">{{ comunicado.titulo }}</a>
+                        </td>
+                        <td>
+                            {{ comunicado.fecha }}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/bootstrap-datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'javascripts/bootstrap-datatables/dataTables.bootstrap4.min.js' %}"></script>
+    <script>
+        if ($('.dataTable').length) {
+            if (locale === 'es') {
+                $('.dataTable').DataTable({
+                    "language": {
+                        "lengthMenu": "Mostrar en bloques de  _MENU_  registros",
+                        "zeroRecords": "No se he encontrado",
+                        "info": "Mostrando desde _START_ hasta _END_ de _TOTAL_ registros",
+                        "infoEmpty": "No hay registros disponibles",
+                        "infoFiltered": "(filtrado de _MAX_ registros en total)",
+                        "sSearch": "Buscar:",
+                        "oPaginate": {
+                            "sFirst": "Primero",
+                            "sPrevious": "Anterior",
+                            "sNext": "Siguiente",
+                            "sLast": "Último"
+                        }
+                    },
+                    "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                    "bSort": true,
+                    "order": [[1, 'desc']],
+                    "searching": false,
+                    info: false
+                });
+            } else {
+                $('.dataTable').DataTable({
+                    "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                    "bSort": true,
+                    "order": [[1, 'desc']]
+                });
+            }
+        }
+    </script>
+{% endblock %}

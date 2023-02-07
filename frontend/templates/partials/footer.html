@@ -1,0 +1,77 @@
+{% load i18n %}
+{% load static %}
+<footer id="site-footer" class="site-footer pt-5 pb-4 position-relative">
+    <a id="denuncia" href="{% url 'denuncia' %}" class="octf-btn d-flex align-items-center"><i
+            role="presentation" role="presentation" class="fa fa-commenting-o text-white"></i> {% trans 'Canal de denuncias' %}</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <p class="text-light mb-0">{% if page == 'denuncia' %}{% trans 'footer_2' %}{% else %}{% trans 'footer_1' %}{% endif %}</p>
+            </div>
+            <div class="col-lg-4 align-self-center text-lg-right">
+                <a href="{% url 'empleo' %}" class="octf-btn octf-btn-light">{% trans 'Empleo_footer' %}</a>
+            </div>
+        </div>
+        <div class="space-60"></div>
+        <div class="row">
+            {#            <div class="col-sm-6 col-lg-3 mb-4 mb-md-0">#}
+            {#                <div class="footer-widget">#}
+            {#                    <h4 class="footer-title">Contacto</h4>#}
+            {#                    <div class="footer-contact-info">#}
+            {#                        <span class="number-phone">+ 123-456-7890</span>#}
+            {#                        <span class="number-phone">+ 123-456-7891</span>#}
+            {#                        <div class="space-10"></div>#}
+            {#                        <div class="space-5"></div>#}
+            {#                        <span>Lun - Vie: 10am - 10pm</span>#}
+            {#                        <div class="space-10"></div>#}
+            {#                        <div class="space-20"></div>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </div>#}
+            <div class="col-sm-6 col-lg-4 mb-4 mb-md-0">
+                <div class="footer-widget">
+                    <h4 class="footer-title">{% trans 'Acerca de' %}</h4>
+                    <ul>
+                        <li><a href="{% url 'acerca-de' %}">{% trans 'Nosotros_footer' %}</a></li>
+                        <li><a href="{% url 'acerca-de' %}#nuestra-trayectoria">{% trans 'Historia' %}</a></li>
+                        <li><a href="{% url 'sustentabilidad' %}">{% trans 'Sustentabilidad' %}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4 mb-sm-0">
+                <div class="footer-widget">
+                    <h4 class="footer-title">{% trans 'Recursos' %}</h4>
+                    <ul>
+                        <li>
+                            <a href="https://investorcloud.s3.amazonaws.com/corporativoelementia/documentosrelevantes/aviso-privacidad-elementia.pdf"
+                               aria-label="this opens in a new tab" target="_blank">{% trans 'Aviso de privacidad' %}</a></li>
+                        <li><a aria-label="this opens in a new tab" target="_blank"
+                               href="https://investorcloud.s3.amazonaws.com/corporativoelementia/documentosrelevantes/codigo-etica-.pdf">{% trans 'Código de ética' %}</a>
+                        </li>
+                        <li><a aria-label="this opens in a new tab" target="_blank"
+                               href="https://investorcloud.s3.amazonaws.com/corporativoelementia/documentosrelevantes/politica-integridad.pdf">{% trans 'Política de integridad' %}</a>
+                        </li>
+                        <!--<li><a href="{% url 'denuncia' %}"> {% trans 'Canal de denuncias' %}</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="footer-widget">
+                    <h4 class="footer-title">{% trans 'En las redes' %}</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ElementiaOficial/">Facebook</a></li>
+                        <!--<li><a href="https://www.instagram.com/elementiacorp/">Instagram</a></li>-->
+                        <li><a href="https://www.linkedin.com/company/elementia/?originalSubdomain=es">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 align-self-center">
+                <p class="copyright text-center mb-0">ELEMENTIA MATERIALES, S.A.B. DE C.V <br class="d-block d-md-none">
+                    Copyright
+                    © {% now 'Y' %} {% trans 'Todos los derechos reservados' %}</p>
+            </div>
+        </div>
+    </div>
+</footer>

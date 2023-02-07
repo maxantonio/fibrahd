@@ -1,0 +1,203 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+
+{% block wrapper %}
+    <section class="default-section ">
+        <div class="container calculadora p-5">
+            <div class="row justify-content-center">
+                <div class=" col-sm-12 col-xs-12">
+                    <div class="widget text-justify row">
+                        <div class="col-md-12">
+                            <div class="">
+                                <div class="panel-heading bg-primary p-2">
+                                    DATOS DE LA INVERSIÓN
+                                </div><br>
+                                <div class="panel-body ">
+                                    <form class="form row" id="calculadora" action="/es/calculate">
+
+                                        <div class="form-group col-md-4" id="group_cbfi">
+                                            <label for="cbfis" class="control-label">CANTIDAD DE ACCIONES
+                                                ELEMAT</label>
+                                            <input type="number" id="cbfis" min="0" step="1" data-bind="value:cbfis"
+                                                   class="form-control"/>
+                                            <!--<span class="form-control-feedback">Debe seleccionar un número mayor a 0</span>-->
+                                        </div>
+                                        <div class="form-group group-fechas col-md-4">
+                                            <label for="start_date" class="control-label">FECHA INICIAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker" id="start_date">
+                                                <div class="input-group-addon">
+                                                    <span role="presentation" class="icon-picons-date"></span>
+                                                </div>
+                                            </div>
+                                            <!--<span class="form-control-feedback">Debe seleccionar una fecha inferior a la fecha final</span>-->
+                                        </div>
+                                        <div class="form-group group-fechas col-md-4">
+                                            <label for="end_date">FECHA FINAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker" id="end_date">
+                                                <div class="input-group-addon">
+                                                    <span role="presentation" class="icon-picons-date"></span>
+                                                </div>
+                                            </div>
+                                            <!--<span class="form-control-feedback">Debe seleccionar una fecha superior a la fecha de inicio</span>-->
+                                        </div>
+                                        <br>
+                                        <div class="input-group mb-15 ">
+                                            <button type="button" class="btn btn-info disabled btn-maincolor ml-auto"
+                                                    id="calculate" style="margin-right: 15px">CALCULAR
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="widget text-justify row">
+                        <div class="col-md-6">
+                            <div class="">
+                                <div class="panel-heading bg-primary p-2">
+                                    INVERSIÓN INICIAL
+                                </div>
+                                <br>
+                                <div class="panel-body ">
+                                    <div class="form-group"><label for="precio_i">PRECIO DE ACCIONES DE ELEMAT:</label>
+                                        <div class="value" id="precio_i">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="cantidad_i">CANTIDAD DE ACCIONES:</label>
+                                        <div class="value" id="cantidad_i">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="monto_i">MONTO INVERTIDO:</label>
+                                        <div class="value" id="monto_i">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <div class="panel-heading bg-primary p-2">
+                                    RESULTADO FINAL
+                                </div>
+                                <br>
+                                <div class="panel-body ">
+                                    <div class="form-group"><label for="precio_f">PRECIO DE ACCIONES DE ELEMAT:
+                                    </label>
+
+                                        <div class="value" id="precio_f">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="monto_f">VALOR INVERSIÓN:</label>
+
+                                        <div class="value" id="monto_f">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="rendimiento">RENDIMIENTO:</label>
+                                        <div class="value" id="rendimiento">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="rendimiento_p">RENDIMIENTO:</label>
+                                        <div class="value" id="rendimiento_p">0</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <div class="panel-heading bg-primary p-2">
+                                    DIVIDENDOS RECIBIDOS
+                                </div>
+                                <br>
+                                <div class="panel-body ">
+                                    <div class="form-group"><label for="cantidad_d">CANTIDAD DE ACCIONES:</label>
+                                        <div class="value" id="cantidad_d">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="dividendos_p">DIVIDENDOS PERIODO EMISORA
+                                        :</label>
+
+                                        <div class="value" id="dividendos_p">0</div>
+                                    </div>
+
+                                    <div class="form-group"><label for="monto_d">DIVIDENDOS RECIBIDOS:</label>
+                                        <div class="value" id="monto_d">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <div class="panel-heading bg-primary p-2">
+                                    RENDIMIENTO FINAL
+                                </div>
+                                  <br>
+                                <div class="panel-body ">
+                                            <div class="form-group"><label for="rendimiento_t">RENDIMIENTO
+                                                TOTAL:</label>
+                                                <div class="value" id="rendimiento_t">0</div>
+                                            </div>
+
+                                            <div class="form-group"><label for="rendimiento_tp">RENDIMIENTO
+                                                TOTAL:</label>
+                                                <div class="value" id="rendimiento_tp">0</div>
+                                            </div>
+
+                                            <div class="form-group"><label for="rendimiento_a">RENDIMIENTO
+                                                ANUALIZADO:</label>
+                                                <div class="value" id="rendimiento_a">0</div>
+                                            </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end col-lg-9 -->
+            </div><!-- end row -->
+
+        </div>
+    </section>
+{% endblock %}
+{% block otherscripts %}
+    <script>
+        var api_url = "https://hkpy.irstrat.com/intradia/9372?date=";
+        var symbol_id = 9372;
+    </script>
+    <script src="{% static 'javascripts/js/moment.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/bootstrap-datepicker.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/bootstrap-datepicker.es.js' %}"></script>
+    <script src="{% static 'javascripts/js/calculadora.js' %}?v=1.0.1"></script>
+    <script src="{% static 'javascripts/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/js/inversion.js' %}?v=1.0.1"></script>
+{% endblock %}
+{% block otherstyles %}
+    <link type="text/css" href="{% static 'stylesheets/css/bootstrap-datepicker.css' %}"/>
+    <style>
+        .datepicker table thead tr th:first-child {
+            border-top-left-radius: 0px;
+        }
+
+        .datepicker table thead tr th:last-child {
+            border-top-right-radius: 0px;
+        }
+
+        .datepicker .day, .datepicker .prev, .datepicker .next {
+            cursor: pointer;
+        }
+
+        .datepicker .active.day {
+            background: #0f3e68;
+            color: white;
+        }
+        .bg-primary{
+            background-color: #F8A064 !important;
+        }
+    </style>
+{% endblock %}

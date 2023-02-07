@@ -1,0 +1,87 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('contacto', views.contacto, name='contacto'),
+    path('denuncia', views.denuncia, name='denuncia'),
+    path('send-denuncia', views.send_denuncia, name='send-denuncia'),
+    path('send-mail-contact', views.send_mail_contact, name='send-mail-contact'),
+    path('responsabilidad', views.responsabilidad, name='responsabilidad'),
+    path('nosotros', views.acerca_de, name='acerca-de'),
+    # path('trayectoria', views.trayectoria, name='trayectoria'),
+    # path('cultura', views.cultura, name='cultura'),
+    path('trabaja', views.trabaja, name='trabaja'),
+    path('identidad', views.identidad, name='identidad'),
+    path('negocios', views.negocios, name='negocios'),
+    path('construsistemas', views.construsistemas, name='construsistemas'),
+    path('proveedores', views.proveedores, name='proveedores'),
+    path('clientes', views.clientes, name='clientes'),
+    path('sustentabilidad', views.sustentabilidad, name='sustentabilidad'),
+    path('que_es', views.que_es, name='que_es'),
+    path('publicaciones', views.publicaciones, name='publicaciones'),
+    path('grupos', views.grupos, name='grupos'),
+    path('desempeno_social', views.desempeno_social, name='desempeno_social'),
+    path('desempeno_ambiental', views.desempeno_ambiental, name='desempeno_ambiental'),
+
+
+
+    path('funcionarios', views.funcionarios, name='funcionarios'),
+    path('consejo-administracion', views.consejo_administracion, name='consejo-administracion'),
+    path('aspectos-destacados', views.aspectos_destacados, name='aspectos-destacados'),
+    path('historia', views.historia, name='historia'),
+    path('estrategia', views.estrategia, name='estrategia'),
+    path('alianzas', views.alianzas, name='alianzas'),
+    path('panorama', views.panorama, name='panorama'),
+    # GOBIERNO
+    path('directivos', views.directivos, name='directivos'),
+    path('plan-compensacion', views.compensacion, name='compensacion'),
+    path('consejo', views.consejo, name='consejo'),
+    path('comites', views.comites, name='comites'),
+    path('estructura', views.estructura, name='estructura'),
+    path('documentos', views.documentos, name='documentos'),
+    path('esg', views.esg, name='esg'),
+    # INFORMACION FINANCIERA
+    path('cifras', views.cifras, name='cifras'),
+    path('faq', views.faq, name='faq'),
+    path('glosario', views.glosario, name='glosario'),
+    path('eventos', views.eventos, name='eventos'),
+    path('eventos-relevantes', views.comunicados, name='comunicados'),
+    path('proximos-eventos', views.proximos_eventos, name='proximos_eventos'),
+    path('reportes', views.reportes, name='reportes'),
+    path('reportes_financieros', views.reportes_financieros, name='reportes_financieros'),
+    path('conferencia', views.conferencia, name='conferencia'),
+    # bursatil
+    path('cerpis', views.cerpis, name='cerpis'),
+    path('administrador', views.administrador, name='administrador'),
+    path('asamblea', views.asamblea, name='asamblea'),
+    path('informacion-accion', views.accion, name='informacion-accion'),
+    path('precios-historicos', views.historicos, name='precios-historicos'),
+    path('calculadora', views.calculadora, name='calculadora'),
+    path('cobertura', views.cobertura, name='cobertura'),
+    # path('dividendos', views.dividendos, name='dividendos'),
+    path('calificaciones', views.calificaciones, name='calificaciones'),
+    path('prospectos', views.prospectos, name='prospectos'),
+    path('prensa', views.prensa, name='prensa'),
+    # portafolio
+    path('concepto-plaza-sendero', views.concepto_plaza, name='concepto_plaza'),
+    path('resumen-operativo', views.resumen_operativo, name='resumen_operativo'),
+    path('arrendatarios', views.arrendatarios, name='arrendatarios'),
+    path('listado-propiedades', views.propiedades, name='propiedades'),
+    path('send-mail-contact', views.send_mail_contact, name='send-mail-contact'),
+    path('send-subscription', views.send_subscription, name='send-subscription'),
+
+    path('cancun', views.cancun, name='cancun'),
+    path('marina-vallarta', views.marina_vallarta, name='marina_vallarta'),
+    path('wyndham-condesa', views.wyndham_condesa, name='wyndham_condesa'),
+    path('cancun2', views.cancun2, name='cancun2'),
+    path('dreams', views.dreams, name='dreams'),
+    path('parque', views.parque, name='parque'),
+    path('anteriores', views.anteriores, name='anteriores'),
+    path('esg', views.esg, name='esg'),
+
+    path('empleo', views.empleo, name='empleo'),
+    path('resultados', views.resultados, name='resultados'),
+
+]

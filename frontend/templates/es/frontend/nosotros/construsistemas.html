@@ -1,0 +1,64 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+    <style>
+        .circle {
+            background: #0f0f3d;
+            border-radius: 50%;
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            padding-right: 20px;
+            padding-left: 32px;
+        }
+
+        .circle img {
+            position: absolute;
+            top: 15%;
+            right: 15%;
+            max-width: 70%;
+        }
+
+        .border-right-c {
+            border-right: solid 1px #c1c1c1;
+        }
+
+        @media all and (max-width: 768px) {
+            .border-right-c {
+                border-right: transparent;
+                border-bottom: solid 1px #c1c1c1;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+
+            img.oversize {
+                width: 120%;
+                max-width: 120%;
+                margin-left: -10%;
+            }
+        }
+    </style>
+{% endblock %}
+
+
+{% block wrapper %}
+
+    <div class="container py-5 on-mobile">
+        <div class="col-12">
+
+            <p>Unidad de negocio orientada a la fabricación de productos de construcción ligera con los más
+              altos estándares de calidad que pueden ser utilizadas en la edificación, reparación y remodelación
+              de viviendas y propiedades comerciales. Nuestros principales productos son: láminas de fibrocemento,
+              láminas plásticas y de propileno, tinacos, pinturas, planos, paneles de fibrocemento, entre otros
+              para atender las necesidades de vivienda del sector social, de la vivienda media y comercial.</p>
+
+
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+{% block otherscripts %}
+{% endblock %}

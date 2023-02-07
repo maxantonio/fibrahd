@@ -1,0 +1,50 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+    <div class="container pt-5 pb-5">
+
+      <div class="row portfolio">
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/parque2.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/parque2.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/parque1.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/parque1.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/parque3.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/parque3.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+                  <div class="col-md-12"><br></div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/parque5.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/parque5.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/parque4.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/parque4.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/parque6.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/parque6.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+
+      </div>
+
+      <h3></h3>
+                <p>Ubicado en la zona de más alta plusvalía comercial y turística de Baja California, el parque industrial de Murano contará con un diseño y arquitectura consistente, apoyado en tecnología y servicios de primera calidad, que
+                  brindarán las condiciones ideales para que las empresas operen con la mayor eficiencia.</p>
+                <p>El complejo consiste en un aproximado de 450,000 m<sup>2</sup> de espacio para uso industrial, el cual buscará aprovechar la alta demanda de empresas extranjeras que tiene el corredor Tijuana/Ensenada debido a su
+                  cercanía con la frontera.
+                </p>
+
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/themes/iredge.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/contenido/en-numeros.js' %}?v=1.0.1"></script>
+{% endblock %}

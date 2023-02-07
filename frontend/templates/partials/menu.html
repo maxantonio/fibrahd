@@ -1,0 +1,76 @@
+{% load change_languaje %}
+{% load static %}
+{% load i18n %}
+
+<ul>
+    <li>
+        <a href="{% url 'acerca-de' %}">
+            <div>{% trans 'Nosotros' %}</div>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'negocios' %}">
+            <div>{% trans 'Nuestras empresas' %}</div>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'sustentabilidad' %}">
+            <div>{% trans 'Sustentabilidad' %}</div>
+        </a>
+        {#        <ul>#}
+        {#            <li class="{% if page == 'que_es' %}current{% endif %}">#}
+        {#                <a href="{% url 'que_es' %}">#}
+        {#                    <div>{% trans "¿Qué es?" %}</div>#}
+        {#                </a>#}
+        {#            </li>#}
+        {#            <li class="{% if page == 'grupos' %}current{% endif %}">#}
+        {#                <a href="{% url 'grupos' %}">#}
+        {#                    <div>{% trans "Grupos de Interés y Materialidad" %}</div>#}
+        {#                </a>#}
+        {#            </li>#}
+        {#            <li class="{% if page == 'desempeno_social' %}current{% endif %}"><a href="{% url 'desempeno_social' %}">#}
+        {#                <div>{% trans "Desempeño social" %}</div>#}
+        {#            </a></li>#}
+        {#                    <li class="{% if page == 'desempeno_ambiental' %}current{% endif %}"><a href="{% url 'desempeno_ambiental' %}">#}
+        {#            <li class="{% if page == 'desempeno_ambiental' %}current{% endif %}"><a#}
+        {#                    href="{% url 'desempeno_ambiental' %}">#}
+        {#                <div>{% trans "Desempeño ambiental" %}</div>#}
+        {#            </a></li>#}
+        {#            <li class="{% if page == 'publicaciones' %}current{% endif %}"><a href="{% url 'publicaciones' %}">#}
+        {#                <div>{% trans "Publicaciones" %}</div>#}
+        {#            </a></li>#}
+        {#        </ul>#}
+    </li>
+    <li>
+        <a href="https://www.rielementiamateriales.com/{% if request.LANGUAGE_CODE == 'en' %}en/{% endif %} " aria-label="this opens in a new tab" target="_blank">
+
+            <div>{% trans 'Inversionistas' %}</div>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'empleo' %}">
+            <div>{% trans 'Empleo' %}</div>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'contacto' %}">
+            <div>{% trans 'Contacto' %}</div>
+        </a>
+    </li>
+<li>
+    <div class="{{ request.LANGUAGE_CODE }} ml-xl-5">
+
+        {#        <a class="cart-btn mr-3"  href="{% url 'prensa' %}">#}
+        {#            <span>{% trans 'Sala de Prensa' %}</span>#}
+        {#        </a>#}
+
+        <a class=" cart-btn  {% if request.LANGUAGE_CODE == 'es' %}active{% endif %}"
+           href="{% change_lang 'es' %}">ES </a>|
+        <a class="cart-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}"
+           href="{% change_lang 'en' %}">EN</a>
+    </div>
+</li>
+
+</ul>
+
+

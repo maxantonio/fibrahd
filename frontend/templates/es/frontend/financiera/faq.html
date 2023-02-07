@@ -1,0 +1,142 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+    <section id="content">
+        <div class="content-wrap" style="padding: 50px 0 80px;">
+
+            <div class="container clearfix">
+
+
+                <div class="accordion accordion-border clearfix" data-state="closed">
+
+                    <div class="acctitle acctitlec bg-light-gray"><p>
+                        <em>1- ¿Qué es un CERPI?</em></p>
+                    </div>
+                    <div class="acc_content clearfix active"><p>Un Certificado Bursátil Fiduciario de Proyectos de Inversión, por
+                        sus siglas “CERPI”, es un instrumento estructurado de inversión que cotiza en bolsa para obtener
+                        recursos mediante una o varias emisiones, las cuales destinan su monto recaudado a financiar
+                        distintos tipos de proyectos a través de uno o varios vehículos.</p>
+                    </div>
+
+                    <div class="acctitle"><p>
+                        <em>2- ¿Quién es Murano?</em></p>
+                    </div>
+                    <div class="acc_content clearfix"><p>Grupo Murano es una empresa
+                        desarrolladora mexicana con una amplia trayectoria en la estructuración, desarrollo y
+                        análisis de proyectos industriales, inmobiliarios residenciales, oficinas corporativas y de
+                        hotelería a lo largo del país.</p>
+
+                    </div>
+
+                    <div class="acctitle bg-light-gray"><p>
+                        <em>3- ¿Cuáles son las fortalezas competitivas de la Compañía?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+
+                        <p>Las principales fortalezas de Murano son las siguientes:</p>
+                        <ul>
+                            <li>• Clara estrategia de inversión: invertimos en el sector inmobiliario con el objetivo de
+                                generar oportunidades de crecimiento bajo altas eficiencias operativas que impulsen la rentabilidad.
+                            </li>
+                            <li>• Sólido alineamiento con los intereses del público inversionista: relaciones
+                                estructuradas a fin de garantizar la correcta alineación de intereses entre nosotros y
+                                el público inversionista.
+                            </li>
+                            <li>• Equipo ejecutivo experimentado y comprometido: equipo directivo con una sólida
+                                trayectoria en el desarrollo, adquisición y financiamiento de atractivas oportunidades
+                                de inversión, así como en proyectos emblemáticos en el sector inmobiliario de México.
+                            </li>
+                            <li>• Capital humano y experiencia en el sector inmobiliario: asociados, colaboradores y
+                                personal clave con experiencia probada a lo largo de toda la cadena de valor en el
+                                desarrollo, operación y comercialización de activos inmobiliarios.
+                            </li>
+                            <li>• Sólida posición financiera: apalancada en diversas instituciones nacionales e
+                                internacionales.
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="acctitle"><p>
+                        <em>4- ¿Quiénes son los directivos clave de la Compañía?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+                        <p>Para obtener información detallada de los directivos y su experiencia profesional favor de
+                        dirigirse a la sección<a href="{% url 'directivos' %}"> Equipo Directivo</a>.</p>
+                    </div>
+
+                    <div class="acctitle bg-light-gray"><p>
+                        <em>5- ¿Dónde puedo encontrar información acerca del portafolio de Murano?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+                        <p>Para consultar información detallada respecto al portafolio favor de dirigirse a la sección <a
+                            href="{% url 'propiedades' %}"> Portafolio</a>.</p>
+                    </div>
+
+                    <div class="acctitle"><p>
+                        <em>6- ¿Qué papel juega Murano en las emisiones de CERPIs con clave de pizarra “Murapi”?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+                        <p>Murano actúa como el Administrador y co-inversionista de los proyectos en los que se
+                            invertirá el dinero recaudado mediante las distintas emisiones de CERPIs, por lo que está
+                            encargado de llevar la estrategia de negocio y la generación de valor de cada vehículo de
+                            inversión. </p>
+                    </div>
+
+                    <div class="acctitle bg-light-gray"><p>
+                        <em>7- ¿Dónde cotizarán las emisiones de CERPIs que haga la compañía?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+                        <p>Las distintas emisiones estarán listadas en la Bolsa Institucional de Valores, S.A. de C.V.
+                        (BIVA) o la Bolsa Mexicana de Valores, S.A.B. de C.V. (BMV), dependiendo de lo establecido en cada contrato del
+                        fideicomiso.</p>
+                    </div>
+
+                    <div class="acctitle"><p>
+                        <em>8- ¿Qué derechos confieren los CERPIs a los tenedores?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+                        <p>Los certificados otorgan el derecho a recibir distribuciones periódicas por el patrimonio
+                        invertido, así como el derecho de preferencia de suscripción de nuevos certificados.</p>
+                    </div>
+
+                    <div class="acctitle bg-light-gray"><p>
+                        <em>9- ¿Cómo puedo contactarme con la Compañía?</em></p>
+                    </div>
+                    <div class="acc_content clearfix">
+                        <p>Para atender sus necesidades, puede llamarnos, enviarnos un correo electrónico o
+                            completar el formulario de la sección de <a href="{% url 'contacto' %}">contacto</a> y nosotros nos comunicaremos a la brevedad posible:
+                        </p>
+                        <ul>
+                             <li class="mt-2"><i role="presentation" class="icon-phone1 mr-2 "></i><span>+52 55 5292 0100</span>
+                                    </li>
+                                    <li class="mt-2"><i role="presentation" class="icon-mail mr-2"></i><a href="mailto:info@murano.com.mx">info@murano.com.mx</a>
+                                    </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block otherscripts %}
+
+<script>
+$(function(){
+    $(".acc_content.active").show()
+})
+</script>
+
+
+{% endblock %}

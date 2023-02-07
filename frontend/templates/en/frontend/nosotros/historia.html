@@ -1,0 +1,137 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+    <div class="container py-5 js historia">
+
+      <div class="col-12">
+
+      <div class="row mb-3">
+          <div class="col-12">
+              <img src="{% static 'images/portfolio/infograma3.png' %}" alt="alternative text" class="oversize">
+          </div>
+      </div>
+
+
+
+        <div class="row">
+        </div>
+        <!--    <div class="sec-title">-->
+        <!--      <h3 id="trayectoria" class="border-title">Nuestros iphone</h3>-->
+        <!--    </div>-->
+        <br>
+        <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+            <div class="cd-h-timeline__container">
+                <div class="cd-h-timeline__dates">
+                    <div class="cd-h-timeline__line">
+                        <ol>
+                            <li>
+                                <a href="#0" data-date="01/01/1995"
+                                   class="cd-h-timeline__date cd-h-timeline__date--selected">1995</a>
+                            </li>
+                            <li><a href="#0" data-date="01/01/2010" class="cd-h-timeline__date">2010</a></li>
+                            <li><a href="#0" data-date="01/01/2020" class="cd-h-timeline__date">2020</a></li>
+                            <li><a href="#0" data-date="01/01/2021" class="cd-h-timeline__date">2021</a></li>
+
+                        </ol>
+
+
+                        <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+                    </div> <!-- .cd-h-timeline__line -->
+                </div> <!-- .cd-h-timeline__dates -->
+
+                <ul>
+                    <li>
+                        <a href="#0"
+                           class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a>
+                    </li>
+                    <li><a href="#0"
+                           class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a>
+                    </li>
+                </ul>
+            </div> <!-- .cd-h-timeline__container -->
+
+            <div class="cd-h-timeline__events">
+                <ol>
+                    <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
+                        <div class="cd-h-timeline__event-content">
+                            <div class="row" style="display: flex; align-items: center;">
+                              <div class="col-md-5">
+                                  <img src="{% static 'images/historia/trayectoria1.png' %}" alt="alternative text" width="100%">
+                              </div>
+                                <div class="col-md-7">
+                                    <p class="cd-h-timeline__event-description color-contrast-medium">
+                                       La familia Sacal cuenta con más de 25 años de experiencia en el desarrollo inmobiliario y comercialización de residencias y condominios. Marcos Sacal, fundador de Grupo Murano, formó parte del negocio familiar desde temprana edad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cd-h-timeline__event text-component">
+                        <div class="cd-h-timeline__event-content">
+                            <div class="row" style="display: flex; align-items: center;">
+
+                                <div class="col-md-7">
+                                    <p class="cd-h-timeline__event-description color-contrast-medium">
+Marcos Sacal fundó Grupo Murano con la visión de crear un promotor y operador inmobiliario líder, dejando atrás la estructura familiar.                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="{% static 'images/historia/trayectoria2.png' %}" alt="alternative text" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cd-h-timeline__event text-component">
+                        <div class="cd-h-timeline__event-content">
+                            <div class="row" style="display: flex; align-items: center;">
+                              <div class="col-md-5">
+                                  <img src="{% static 'images/historia/trayectoria3.png' %}" alt="alternative text" width="100%">
+                              </div>
+                                <div class="col-md-7">
+                                    <p class="cd-h-timeline__event-description color-contrast-medium">
+Hoy en día Grupo Murano es una institución que cuenta con la confianza y el respaldo de sus prestamistas que han comprometido más de US$ 200 millones para el desarrollo de dos hoteles. Asimismo, Murano posee una importante reserva territorial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cd-h-timeline__event text-component">
+                        <div class="cd-h-timeline__event-content">
+                            <div class="row" style="display: flex; align-items: center;">
+                                <div class="col-md-7">
+                                    <p class="cd-h-timeline__event-description color-contrast-medium">
+                                       Grupo Murano está a punto de lanzar un Certificado Bursátil Fiduciario de Proyectos de Inversión (CERPIS) en la Bolsa institucional de Valores, el cual tendrá como activos subyacentes los proyectos inmobiliarios de la Compañía.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="{% static 'images/historia/trayectoria4.png' %}" alt="alternative text" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ol>
+            </div> <!-- .cd-h-timeline__events -->
+        </section>
+
+    </div>
+  </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/js/timeline/util.js' %}"></script>
+    <script src="{% static 'javascripts/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/timeline/swipe-content.js' %}"></script>
+    <script src="{% static 'javascripts/js/timeline/main.js' %}"></script>
+
+    <link href={% static 'stylesheets/history.css' %}  rel="stylesheet" type="text/css"/>
+    <link href={% static 'stylesheets/owl.carousel.css' %}  rel="stylesheet" type="text/css"/>
+
+{% endblock %}

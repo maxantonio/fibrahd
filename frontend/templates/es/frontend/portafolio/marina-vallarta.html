@@ -1,0 +1,56 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+    <div class="container pt-5 pb-5">
+
+      <div class="row portfolio">
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/vallarta4.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/vallarta4.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/vallarta3.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/vallarta3.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/vallarta2.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/vallarta2.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+                  <div class="col-md-12"><br></div>
+
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/vallarta6.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/vallarta6.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/vallarta1.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/vallarta1.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/vallarta5.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/vallarta5.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+
+      </div>
+
+   <h3 id="marina-vallarta"></h3>
+                <p>
+                    El nuevo concepto de Marina Vallarta operado por Murano, en el corazón de Puerto Vallarta, Jalisco,
+                    ofrece la excelencia en el servicio de atención a clientes nacionales e internacionales, compuesta
+                    por
+                    350 slips de hasta 160 pies. Esta icónica marina comenzó a ser administrada desde mayo del 2013 por
+                    Murano, convirtiéndola en un proyecto rentable de más de US$ 2 millones de EBITDA anual, gracias a
+                    los
+                    exitosos y novedosos planes de renovación y desarrollo aplicados por la estrategia empresarial y
+                    comercial de Murano.
+                </p>
+
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/themes/iredge.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/contenido/en-numeros.js' %}?v=1.0.1"></script>
+{% endblock %}

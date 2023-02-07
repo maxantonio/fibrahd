@@ -1,0 +1,224 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/timeline.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/trayectoria.css' %}?v=1.0.4"/>
+{% endblock %}
+
+{% block wrapper %}
+    <div style="background-color:#004E7C">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white mb-4 mt-4">Contamos con más de 20 años de experiencia en la industria de la
+                        construcción</h3>
+                    <p class="text-white mb-4">Elementia Materiales es una empresa mexicana con presencia internacional dedicada a
+                      productos de construcción ligera y al desarrollo de soluciones constructivas innovadoras empleadas en
+                      todas las etapas de la construcción. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="background-color:#EA8823">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="text-white mb-3 mt-3">Elementia Materiales nace en 2021, como resultado de la escisión de los negocios
+                      de Construsistemas y Metales del negocio de Cementos (Antes Elementia S.A.B. de C.V.).</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <img class="img-fluid" src="{% static 'images/elementia/infograma-esp.png' %}" alt="alternative text"
+                             width="120%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Unidades de negocio</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center flex-wrap unidades">
+            <div class="col-md-6 pl-5 pr-5 pl-md-0 pr-md-0">
+                <img src="{% static 'images/nosotros/construsistemas.png' %}" alt="alternative text">
+            </div>
+            <div class="col-md-6">
+                <h3 class="pl-5 mb-0">Construsistemas</h3>
+                <p class="p-5 mb-0">Esta Unidad de Negocio está orientada a la fabricación y distribución de
+                  productos de construcción ligera y soluciones de negocio que satisfacen las necesidades de
+                  los segmentos social, vivienda media, residencial y comercial.
+                  Nuestra experiencia nos respalda, pues somos la integración de diferentes negocios a través
+                  de fusiones y adquisiciones en los últimos veinte años.</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center flex-wrap unidades">
+            <div class="col-md-6 order-1 order-md-0">
+                <h3 class="pl-5 mb-0">Metales</h3>
+                <p class="p-5 mb-0">Atiende las necesidades del sector industrial, apoyando principalmente a los
+                    fabricantes de equipo original que requieren aleaciones y piezas metálicas para industrias como
+                    la automotriz, aeronáutica, textil, eléctrica y electrónica. De igual forma, solventa las necesidades del
+                    sector de la construcción mediante la fabricación de soluciones y aplicaciones de equipamiento
+                    y conducción de agua y gas.</p>
+            </div>
+            <div class="col-md-6 pl-5 pr-5 pl-md-0 pr-md-0 order-0 order-md-1">
+                <img src="{% static 'images/nosotros/metales.jpg' %}" alt="alternative text">
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap pb-0">
+        {#        <section id="nuestra-trayectoria">#}
+        {#            <div class="container clearfix">#}
+        {#                <h2 class="text-center text-black">Nuestra trayectoria</h2>#}
+        {#            </div>#}
+        {#        </section>#}
+        <section id="ihistoria" class="bg-white mt-5">
+            <div class="container-time">
+                <div class="timeline">
+                    <div class="swiper-container">
+                        <h2 id="trayectoria" class="text-center text-white" style="position: absolute;">Nuestra
+                            trayectoria</h2>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/eternit.png' %})"
+                                 data-year="2000">
+                                <div class="historia-titulo">
+                                </div>
+                                <div class="swiper-slide-content"><span
+                                        class="timeline-year">Incorporación de Eternit Colombiana</span>
+                                    <h3 class="text-white">Con inicio en 1942 y una gran experiencia en el sector de
+                                        la
+                                        construcción, cuenta con 3 plantas productoras en Colombia.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/duralit.png' %})"
+                                 data-year="2006">
+                                <div class="swiper-slide-content"><span
+                                        class="timeline-year">Incorporación de Duralit</span>
+                                    <h3 class="text-white">Duralit inició operaciones en 1977 en Bolivia y
+                                        actualmente
+                                        cuenta con una de las plantas industriales más modernas del rubro y una red
+                                        de
+                                        distribución con más de 200 puntos de venta.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/mexalit.png' %})"
+                                 data-year="2007">
+                                <div class="swiper-slide-content"><span class="timeline-year">Incorporación de Mexalit, Eureka </span>
+                                    <h3 class="text-white">Mexalit inició operaciones en Sta. Clara, Edo. De México
+                                        en
+                                        1952, mientras que
+                                        Eureka fue fundada en 1932.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/plycem.png' %})"
+                                 data-year="2009">
+                                <div class="swiper-slide-content"><span
+                                        class="timeline-year">Incorporación de Plycem </span>
+                                    <h3 class="text-white">Fue fundada en 1964 en Costa Rica y actualmente cuenta
+                                        con
+                                        plantas en Costa Rica, El Salvador y Honduras.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/frigocel.png' %})"
+                                 data-year="2010">
+                                <div class="swiper-slide-content"><span
+                                        class="timeline-year">Incorporación de Frigocel</span>
+                                    <h3 class="text-white">Fundada en 1984 en México, se especializa en soluciones y
+                                        productos de poliestireno.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/fibraforte.png' %})"
+                                 data-year="2010">
+                                <div class="swiper-slide-content"><span class="timeline-year">Incorporación de Fibraforte </span>
+                                    <h3 class="text-white">Especializada en productos de polipropileno arrancó
+                                        operaciones en 1993 en Perú.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/nacobre.png' %})"
+                                 data-year="2011">
+                                <div class="swiper-slide-content"><span
+                                        class="timeline-year">Incorporación de Nacobre</span>
+                                    <h3 class="text-white">Una de las compañías más importante en productos de cobre
+                                        en
+                                        Latinoamérica se
+                                        fundó en 1950 en México. </h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/historia/allura.png' %})"
+                                 data-year="2014">
+                                <div class="swiper-slide-content"><span
+                                        class="timeline-year">Incorporación de Allura</span>
+                                    <h3 class="text-white">Cuenta con más de 75 años de experiencia y 3 plantas
+                                        atendiendo al mercado de Estados Unidos. </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="content-wrap">
+        <div class="sec-title text-center">
+            <h2>Principios y Comportamientos</h2>
+        </div>
+        <div class="container text-center">
+            <img class="img-fluid" src="{% static 'images/cultura/principios-comportamientos.png' %}" alt="alternative text" width="88%">
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'javascripts/swiper.min.js' %}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var timelineSwiper = new Swiper('.timeline .swiper-container', {
+                direction: 'vertical',
+                loop: false,
+                speed: 1600,
+                pagination: '.swiper-pagination',
+                paginationBulletRender: function (swiper, index, className) {
+                    var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+                    return '<span class="' + className + '">' + year + '</span>';
+                },
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    768: {
+                        direction: 'horizontal',
+                    }
+                }
+            });
+        });
+    </script>
+{% endblock %}

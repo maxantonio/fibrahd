@@ -1,0 +1,39 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+
+    <div class="container p-5">
+      <p>Nuestros proyectos inmobiliarios se distinguen por ser una fuente de beneficios incrementales para la
+          sociedad, debido principalmente a que: </p>
+
+      <ul>
+          <li><p>✓ Generan entre 20,000 y 25,000 empleos durante el ciclo de vida de cada proyecto</p></li>
+          <li><p>✓ Se tiene un enfoque preferencial hacia proveedores nacionales</p></li>
+          <li><p>✓ Suelen representar grandes inversiones en el sector turístico</p></li>
+          <li><p>✓ Cuentan con la certificación EDGE del IFC, una estrategia que promueve la inversión
+              en activos ecológicos</p>
+          </li>
+      </ul>
+
+      <div class="row">
+          <div class="col-md-4 col-6 mb-3"><img src="{% static 'images/about/acerca3.png' %}" alt="alternative text" style="width: 100%"></div>
+          <div class="col-md-4 col-6 mb-3"><img src="{% static 'images/about/acerca1.png' %}" alt="alternative text" style="width: 100%"></div>
+          <div class="col-md-4 col-6 mb-3"><img src="{% static 'images/about/acerca2.png' %}" alt="alternative text" style="width: 100%"></div>
+      </div>
+
+      <div class="container p-5">
+          <div class="infografia">
+              <img src="{% static 'images/gobierno/administrador.png' %}" alt="Estructura Coorporativa" style="width: 100%">
+          </div>
+      </div>
+
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+
+{% block wrapper %}
+    <div class="container pt-5 pb-5">
+
+      <div class="row portfolio">
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/cancun1.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/cancun1.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/cancun2.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/cancun2.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/cancun3.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/cancun3.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+                  <div class="col-md-12"><br></div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/cancun4.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/cancun4.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/cancun5.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/cancun5.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+           <div class="entry-image col-md-4">
+								<a href="{% static 'images/portfolio/desarrollos/cancun6.png' %}" data-lightbox="image"><img class="image_fade" src="{% static 'images/portfolio/desarrollos/cancun6.png' %}" alt="Hotel business upscale" style="opacity: 1;"></a>
+          </div>
+
+      </div>
+
+      <h3 id="grand-island-cancun"></h3>
+                <p>Hotel premium localizado en Cancún, Quintana Roo, dentro de la zona hotelera de la Ciudad, cuenta con
+                    una ubicación por demás privilegiada con frente hacia la Laguna Nichupté y a unos pasos de la Playa
+                    Delfines.</p>
+                <p>
+                    Se planea que Grand Island I inicie operaciones durante el año 2023 bajo la administración de AM
+                    Resorts, usando las marcas “Dreams” para el segmento “familiar”, y “Vivid” dirigida al segmento
+                    “sólo
+                    adultos”. Grand Island I contará con 1,000 habitaciones, además del centro de convenciones de mayor
+                    capacidad y servicios de la zona, conformado por aproximadamente 6,000 m<sup>2</sup>, que se integran con
+                    diversas
+                    amenidades como una crystal lagoon para actividades acuáticas, un lagoon cinema, parque acuático,
+                    villa
+                    de zona comercial, world class spa, centro deportivo, beach club con acceso por Playa Delfines,
+                    albercas
+                    exteriores, albercas en zonas de rooftop, 8 restaurantes y bares, acceso al campo de golf en alianza
+                    con
+                    el hotel Iberostar, alberca de surf, canchas de tenis, y marina privada.
+                </p>
+
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/themes/iredge.js' %}"></script>
+    <script src="{% static 'javascripts/amCharts/contenido/en-numeros.js' %}?v=1.0.1"></script>
+{% endblock %}

@@ -1,0 +1,479 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-08 20:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: frontend/templates/layouts/base.html:207
+msgid "Gracias por subscribirse"
+msgstr ""
+
+#: frontend/templates/layouts/base.html:214
+msgid "Por favor escriba un correo electronico valido"
+msgstr ""
+
+#: frontend/templates/partials/banner_index.html:8
+msgid "slide1_html"
+msgstr ""
+"Grandes proyectos inmobiliarios en destinos con alto potencial <br> de "
+"desarrollo y gran demanda turística a nivel mundial"
+
+#: frontend/templates/partials/banner_index.html:10 frontend/views.py:646
+msgid "Portafolio_t"
+msgstr "Portafolio actual"
+
+#: frontend/templates/partials/footer.html:5
+#: frontend/templates/partials/footer.html:54
+msgid "Canal de denuncias"
+msgstr "Canal de denuncias"
+
+#: frontend/templates/partials/footer.html:9
+msgid "footer_1"
+msgstr ""
+"Para Elementia Materiales los recursos humanos son su principal activo, el "
+"esfuerzo y dedicación de todo el equipo es lo que le ha permitido "
+"posicionarse como uno de los líderes en su ramo."
+
+msgid "footer_2"
+msgstr ""
+"Para Elementia Materiales, sus empleados son su principal activo; el "
+"esfuerzo y la dedicación de todo el equipo le han permitido "
+"convertirse en un referente en su sector."
+
+#: frontend/templates/partials/footer.html:12
+msgid "Empleo_footer"
+msgstr "Empleo"
+
+#: frontend/templates/partials/footer.html:33
+msgid "Acerca de"
+msgstr "Acerca de"
+
+#: frontend/templates/partials/footer.html:35
+msgid "Nosotros_footer"
+msgstr "Nosotros"
+
+#: frontend/templates/partials/footer.html:36 frontend/views.py:195
+msgid "Historia"
+msgstr "Historia"
+
+#: frontend/templates/partials/footer.html:37
+#: frontend/templates/partials/menu.html:18 frontend/views.py:754
+msgid "Sustentabilidad"
+msgstr "Sustentabilidad"
+
+#: frontend/templates/partials/footer.html:43
+msgid "Recursos"
+msgstr "Recursos"
+
+#: frontend/templates/partials/footer.html:47
+msgid "Aviso de privacidad"
+msgstr "Aviso de privacidad"
+
+#: frontend/templates/partials/footer.html:49
+msgid "Código de ética"
+msgstr "Código de ética"
+
+#: frontend/templates/partials/footer.html:52
+msgid "Política de integridad"
+msgstr "Política de integridad"
+
+#: frontend/templates/partials/footer.html:60
+msgid "En las redes"
+msgstr "En las redes"
+
+#: frontend/templates/partials/footer.html:73
+msgid "Todos los derechos reservados"
+msgstr "Todos los derechos reservados"
+
+#: frontend/templates/partials/menu.html:8
+msgid "Nosotros"
+msgstr "Nosotros"
+
+#: frontend/templates/partials/menu.html:13
+msgid "Nuestras empresas"
+msgstr "Nuestras empresas"
+
+#: frontend/templates/partials/menu.html:47
+msgid "Inversionistas"
+msgstr "Inversionistas"
+
+#: frontend/templates/partials/menu.html:52 frontend/views.py:826
+msgid "Empleo"
+msgstr "Empleo"
+
+#: frontend/templates/partials/menu.html:57 frontend/views.py:35
+#: frontend/views.py:36
+msgid "Contacto"
+msgstr "Contacto"
+
+#: frontend/templates/partials/slider_index.html:29
+msgid "slide2_html"
+msgstr ""
+"Somos una de las empresas líderes del sector que ofrece soluciones constructivas "
+"innovadoras que redefinen el concepto de evolución contractiva"
+
+#: frontend/templates/partials/slider_index.html:33
+#: frontend/templates/partials/slider_index.html:61
+msgid "Conoce más"
+msgstr "Conoce más"
+
+#: frontend/templates/partials/slider_index.html:58
+msgid "slide3_html"
+msgstr ""
+"Iniciamos una nueva etapa de crecimiento orientado a la generación "
+"incremental de valor."
+
+#: frontend/templates/partials/slider_index.html:86
+msgid "slide4_html"
+msgstr ""
+"Si eres una persona apasionada por lo que hace, te gustan los retos, "
+"dinámica y con ganas de construir y crecer, te estamos buscando"
+
+#: frontend/templates/partials/slider_index.html:89
+msgid "Se parte del equipo"
+msgstr "SE PARTE DEL EQUIPO DE ELEMENTIA "
+
+#: frontend/templates/registration/login.html:8
+msgid "Cifras Principales"
+msgstr "Cifras principales"
+
+#: frontend/templates/registration/login.html:18
+msgid "login5"
+msgstr "Usuario y/o contraseña no reconocidos. Favor de volver a intentarlo."
+
+#: frontend/templates/registration/login.html:26
+msgid "login1"
+msgstr "Favor de acceder con su ID y contraseña proporcionados por el"
+
+#: frontend/templates/registration/login.html:26
+msgid "login2"
+msgstr "Administrador Grupo Murano"
+
+#: frontend/templates/registration/login.html:34
+msgid "login3"
+msgstr "ID de inversionista"
+
+#: frontend/templates/registration/login.html:38
+msgid "login4"
+msgstr "Contraseña"
+
+#: frontend/templates/registration/login.html:42
+msgid "Acceder"
+msgstr "Acceder"
+
+#: frontend/views.py:21
+msgid "Inicio"
+msgstr "Inicio"
+
+#: frontend/views.py:45
+msgid "Responsabilidad_social"
+msgstr ""
+
+#: frontend/views.py:59
+msgid "Sobre nosotros"
+msgstr "Sobre nosotros"
+
+#: frontend/views.py:60 frontend/views.py:71 frontend/views.py:82
+#: frontend/views.py:93 frontend/views.py:104 frontend/views.py:120
+#: frontend/views.py:131 frontend/views.py:163 frontend/views.py:174
+#: frontend/views.py:185 frontend/views.py:196 frontend/views.py:207
+#: frontend/views.py:218 frontend/views.py:229
+msgid "Perfil"
+msgstr "Perfil"
+
+#: frontend/views.py:70
+msgid "Nuestra trayectoria"
+msgstr "Nuestra trayectoria"
+
+#: frontend/views.py:81
+msgid "Nuestra cultura"
+msgstr "Nuestra cultura"
+
+#: frontend/views.py:92
+msgid "Trabaja con Nosotros"
+msgstr "Trabaja con Nosotros"
+
+#: frontend/views.py:103
+msgid "Nuestra identidad corporativa"
+msgstr "Sitio corporativo"
+
+#: frontend/views.py:119
+msgid "Nuestras Empresas"
+msgstr "Nuestras Empresas"
+
+#: frontend/views.py:130
+msgid "Construsistemas"
+msgstr "Construsistemas"
+
+#: frontend/views.py:141 frontend/views.py:142
+msgid "Proveedores"
+msgstr "Proveedores"
+
+#: frontend/views.py:151 frontend/views.py:152
+msgid "Clientes"
+msgstr "Clientes"
+
+#: frontend/views.py:162
+msgid "Principales funcionarios"
+msgstr "Principales funcionarios"
+
+#: frontend/views.py:173 frontend/views.py:261
+msgid "Consejo de administración"
+msgstr "Consejo de administración"
+
+#: frontend/views.py:184
+msgid "Aspectos destacados"
+msgstr "Aspectos destacados"
+
+#: frontend/views.py:196 frontend/views.py:207 frontend/views.py:218
+#: frontend/views.py:229
+msgid "about"
+msgstr ""
+
+#: frontend/views.py:206
+msgid "Estrategia de negocio"
+msgstr ""
+
+#: frontend/views.py:217
+msgid "Alianzas estratégicas"
+msgstr ""
+
+#: frontend/views.py:228
+msgid "Panorama"
+msgstr ""
+
+#: frontend/views.py:239
+msgid "Equipo directivo"
+msgstr ""
+
+#: frontend/views.py:240 frontend/views.py:251 frontend/views.py:262
+#: frontend/views.py:273 frontend/views.py:284 frontend/views.py:295
+#: frontend/views.py:306
+#, fuzzy
+#| msgid "Sitio corporativo"
+msgid "Gobierno_Corporativo"
+msgstr "Sitio corporativo"
+
+#: frontend/views.py:250
+msgid "Plan de compensación"
+msgstr ""
+
+#: frontend/views.py:272
+msgid "Comites"
+msgstr ""
+
+#: frontend/views.py:283
+msgid "Estructura_Corporativa"
+msgstr ""
+
+#: frontend/views.py:294
+msgid "Documentos corporativos"
+msgstr "Sitio corporativo"
+
+#: frontend/views.py:305 frontend/views.py:739 frontend/views.py:740
+msgid "ESG"
+msgstr ""
+
+#: frontend/views.py:318
+msgid "Informacion de la Deuda"
+msgstr "Información de la acción"
+
+#: frontend/views.py:365
+#, fuzzy
+#| msgid "Canal de denuncias"
+msgid "Canal de Denuncias"
+msgstr "Canal de denuncias"
+
+#: frontend/views.py:410
+msgid "Cifras_principales"
+msgstr "Cifras principales"
+
+#: frontend/views.py:420
+msgid "Preguntas_frecuentes"
+msgstr ""
+
+#: frontend/views.py:430
+msgid "Glosario"
+msgstr ""
+
+#: frontend/views.py:440
+msgid "Documentos relevantes"
+msgstr "Documentos relevantes"
+
+#: frontend/views.py:456
+msgid "Eventos Relevantes"
+msgstr "Eventos Relevantes"
+
+#: frontend/views.py:467
+msgid "Próximos eventos"
+msgstr "Próximos Eventos"
+
+#: frontend/views.py:477
+msgid "Reportes_de_resultados"
+msgstr ""
+
+#: frontend/views.py:487
+msgid "Reportes financieros"
+msgstr "Reportes financieros"
+
+#: frontend/views.py:497
+msgid "Conferencia Telefónica"
+msgstr "Conferencia Telefónica"
+
+#: frontend/views.py:508
+msgid "Asamblea de tenedores"
+msgstr ""
+
+#: frontend/views.py:518
+msgid "Información de la acción"
+msgstr "Información de la acción"
+
+#: frontend/views.py:528
+msgid "Búsqueda de precios históricos"
+msgstr "Búsqueda de precios históricos"
+
+#: frontend/views.py:538
+msgid "Calculadora de rendimientos"
+msgstr "Calculadora de rendimientos"
+
+#: frontend/views.py:548
+msgid "Cobertura de analistas"
+msgstr ""
+
+#: frontend/views.py:558
+msgid "Programa de CERPIs"
+msgstr ""
+
+#: frontend/views.py:568
+msgid "administrador"
+msgstr ""
+
+#: frontend/views.py:578
+msgid "Colocaciones"
+msgstr ""
+
+#: frontend/views.py:588
+msgid "Prospectos y documentos de emisión"
+msgstr ""
+
+#: frontend/views.py:604 frontend/views.py:605
+msgid "SALA DE PRENSA"
+msgstr ""
+
+#: frontend/views.py:616
+msgid "Concepto Plaza Sendero"
+msgstr ""
+
+#: frontend/views.py:617 frontend/views.py:627 frontend/views.py:637
+#: frontend/views.py:647 frontend/views.py:657 frontend/views.py:667
+#: frontend/views.py:677 frontend/views.py:687 frontend/views.py:697
+#: frontend/views.py:707 frontend/views.py:717
+#, fuzzy
+#| msgid "Portafolio_t"
+msgid "Portafolio"
+msgstr "Portafolio actual"
+
+#: frontend/views.py:626
+msgid "Resumen operativo"
+msgstr ""
+
+#: frontend/views.py:636
+msgid "Arrendatarios"
+msgstr ""
+
+#: frontend/views.py:656
+#, fuzzy
+#| msgid "Materiales"
+msgid "anteriores"
+msgstr "Materiales"
+
+#: frontend/views.py:666
+msgid "Grand Island Cancún I"
+msgstr ""
+
+#: frontend/views.py:676
+msgid "Marina Vallarta"
+msgstr ""
+
+#: frontend/views.py:686
+msgid "Wyndham Grand Condesa"
+msgstr ""
+
+#: frontend/views.py:696
+msgid "Grand Island Cancún II"
+msgstr ""
+
+#: frontend/views.py:706
+msgid "Dreams Chateau Baja"
+msgstr ""
+
+#: frontend/views.py:716
+msgid "Baja Park"
+msgstr ""
+
+#: frontend/views.py:762
+msgid "¿Qué es?"
+msgstr ""
+
+#: frontend/views.py:781
+msgid "Publicaciones"
+msgstr ""
+
+#: frontend/views.py:790
+msgid "Grupos de interes y materialidad"
+msgstr ""
+
+#: frontend/views.py:798
+msgid "Desempeño Social"
+msgstr ""
+
+#: frontend/views.py:806
+msgid "Desempeño Ambiental"
+msgstr ""
+
+#: frontend/views.py:814
+msgid "Resultados"
+msgstr ""
+
+#: gmurano/settings.py:156
+msgid "English"
+msgstr ""
+
+#: gmurano/settings.py:157
+msgid "Spanish"
+msgstr ""
+
+#~ msgid "Materiales"
+#~ msgstr "Materiales"
+
+#~ msgid "Links destacados"
+#~ msgstr "Links destacados"
+
+#~ msgid "Cotización de la acción"
+#~ msgstr "Cotización de la acción"
+
+#~ msgid "¿Quiénes somos?"
+#~ msgstr "¿Quiénes somos?"
+
+#~ msgid "Información financiera"
+#~ msgstr "Información financiera"
+
+#~ msgid "Información para accionistas"
+#~ msgstr "Información para accionistas"
+
+#~ msgid "Folleto informativo"
+#~ msgstr "Folleto informativo"

@@ -1,0 +1,683 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'javascripts/fullcalendar/lib/main.css' %}">
+    <style>
+        .fc td, .fc th {
+            border-style: none !important;
+        }
+
+        .fc-theme-standard .fc-scrollgrid {
+            border: none;
+        }
+
+        .repo-left {
+            background-color: #f2f2f2;
+            padding: 100px;
+            border-top: 4px solid #51948c;
+            height: 350px;
+        }
+
+        .calendar-right {
+            background-color: #f2f2f2;
+            border-top: 4px solid #e59547;
+            border-left: 2px solid #fff;
+            height: 350px;
+        }
+
+        table {
+            margin-bottom: unset;
+            overflow: hidden !important;
+        }
+
+        .fc-daygrid-day-events {
+            min-height: initial !important;
+        }
+
+        #calendar > .fc-header-toolbar {
+            margin-bottom: 0.5em;
+        }
+
+        #calendar {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+
+        .fc-daygrid-day-top {
+            justify-content: center;
+        }
+
+        #calendar .fc-scroller.fc-scroller-liquid-absolute {
+            overflow: hidden !important;
+        }
+
+        #calendar a.fc-daygrid-day-number {
+            z-index: 0 !important;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            #calendar {
+                width: 100%;
+            }
+
+            #calendar .fc-col-header {
+                width: 100% !important;
+            }
+
+            .calendar-right {
+                margin-top: 15px;
+            }
+        }
+    </style>
+
+{% endblock %}
+
+
+{% block wrapper %}
+    {% include 'partials/slider_index.html' %}
+    <section id="content">
+        <div class="clearfix">
+            <div class="container mt-5 pt-5 mb-5 pb-5">
+                <div class="auto-container">
+                    <div class="row clearfix d-flex align-items-center flex-wrap">
+                        <div class="col-md-5 col-xs-12 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">
+                            <div class="image display-block-image hidden-xs text-right">
+                                <img class="wow fadeInLeft" data-wow-duration="2s"
+                                     src="{% static 'images/acercade.jpg' %}" alt="alternative text">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 d-flex offset-lg-1" style="align-items: center">
+                            <div class="why-choose-text">
+                                <h2 class="font-weight-bold">Innovación en materiales</h2>
+                                <div class="text texto1">
+                                    <p class="text-justify">Elementia Materiales es una empresa mexicana dedicada a
+                                        productos de construcción
+                                        ligera y al desarrollo de soluciones constructivas innovadoras empleadas en
+                                        todas las etapas
+                                        de la construcción.</p>
+                                </div>
+                                <div class="text">
+                                    <p class="text-justify mb-0">
+                                        Cuenta con varias decadas de éxitos y experiencia en la industria de la
+                                        construcción, que le han convertido en un referente de mercado y en un
+                                        negocio con un amplio posicionamiento en los mercados donde
+                                        participa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-5 pb-5">
+                <div class="auto-container">
+                    <div class="row clearfix d-flex align-items-center flex-wrap">
+                        <div class="col-md-6">
+                            <div class="why-choose-text">
+                                <div class="title">
+                                    <h2 class="font-weight-bold">Nuestras Marcas</h2>
+                                </div>
+                                <div class="text mb-4 mb-md-0">
+                                    <p class="text-justify">A través de nuestras marcas ampliamente reconocidas,
+                                        comercializamos productos de alta calidad dirigidos principalmente al sector
+                                        residencial,
+                                        la autoconstrucción y el sector industrial.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 offset-lg-1 mb-4">
+                            <div class="image display-block-image hidden-xs">
+                                <img class="wow fadeInRight" data-wow-duration="2s"
+                                     src="{% static 'images/empresa.jpg' %}" alt="alternative text">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="oc-clients"
+                                 class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget"
+                                 data-margin="" data-loop="true" data-nav="false" data-autoplay="2000" data-items="8"
+                                 data-pagi="false" data-items-xs="1"
+                                 data-items-sm="2" data-items-md="3" data-items-lg="5" data-items-xl="5">
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Mexalit">
+                                        <img src="{% static 'images/empresas/log1.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Comecop">
+                                        <img src="{% static 'images/empresas/log2.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Frigocel"><img
+                                            src="{% static 'images/empresas/log3.png' %}"
+                                            alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Plycem">
+                                        <img src="{% static 'images/empresas/log4.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Nacobre">
+                                        <img src="{% static 'images/empresas/log5.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Allura">
+                                        <img src="{% static 'images/empresas/log6.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Fibraforte">
+                                        <img src="{% static 'images/empresas/log7.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}?empresa=Eternit_Colombiana">
+                                        <img src="{% static 'images/empresas/log8.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}">
+                                        <img src="{% static 'images/empresas/log9.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                                <div class="oc-item">
+                                    <a href="{% url 'negocios' %}">
+                                        <img src="{% static 'images/empresas/log10.png' %}"
+                                             alt="Clients"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="auto-container mb-5 pb-5">
+                <div class="parallax p-0 pt-5 pb-5"
+                     style="background-image: url({% static 'images/elementia/empleado.jpg' %});background-size:cover; ">
+                    <div class='container text-white'>
+                        <div class='row align-items-center' id="wprt-counter-index">
+                            <div class="col-sm-6 col-lg-3 mt-5 mb-5">
+                                <div class="feature-card wprt-counter">
+                                    <div class="feature-card-content superior justify-content-center">
+                                        <div class="feature-card-title text-uppercase text-center container text-white">
+                                            VENDEMOS EN MÁS DE
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                    <span class="feature-card-desc number" data-speed="1500"
+                                                          data-to="40"
+                                                          data-decimals="0"></span>
+                                        </div>
+                                        <h3 class="feature-card-title text-uppercase text-center container text-white mb-0">
+                                            PAÍSES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 mt-5 mb-5">
+                                <div class="feature-card wprt-counter">
+                                    <div class="feature-card-content superior justify-content-center">
+                                        <div class="feature-card-title text-uppercase text-center container text-white">
+                                            CONTAMOS CON
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                    <span class="feature-card-desc number" data-speed="1500"
+                                                          data-to="22"
+                                                          data-decimals="0">0</span></div>
+                                        <h3 class="feature-card-title text-uppercase text-center container text-white mb-0">
+                                            PLANTAS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 mt-5 mb-5">
+                                <div class="feature-card wprt-counter">
+                                    <div class="feature-card-content superior justify-content-center">
+                                        <div class="feature-card-title text-uppercase text-center container text-white">
+                                            CON MÁS DE
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                    <span class="feature-card-desc number" data-speed="1500"
+                                                          data-to="1800"
+                                                          data-decimals="0"></span>
+                                            <p></p></div>
+                                        <h3 class="feature-card-title text-uppercase text-center container text-white mb-0">
+                                            DISTRIBUIDORES </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 mt-5 mb-5">
+                                <div class="feature-card wprt-counter">
+                                    <div class="feature-card-content superior justify-content-center">
+                                        <div class="feature-card-title text-uppercase text-center container text-white">
+                                            MÁS DE
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                    <span class="feature-card-desc number" data-speed="1500"
+                                                          data-to="5300"
+                                                          data-decimals="0">0</span>
+                                            <p></p></div>
+                                        <h3 class="feature-card-title text-uppercase text-center container text-white mb-0">
+                                            COLABORADORES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--   <div class="text-white ml-auto" style="margin-right: -20px">
+                                    *Cifras en millones de pesos
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5 pb-5">
+                <div class="col-12 text-center">
+                    <h2 class="font-weight-bold">Casos de Éxito</h2>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="container">
+                        <video width="100%" controls loop="loop" playsInline="playsInline"
+                               src="https://investorcloud.s3.amazonaws.com/elementiamateriales/Videos/casos-exito.mp4"
+                               data-autoplay>
+                            <track kind="captions" srcLang="es" src=""/>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            {#            <div class="auto-container mb-5 pb-5">#}
+            {#                <section class="testi-h3">#}
+            {#                    <div class="container">#}
+            {#                        <div class="space-60 d-md-none"></div>#}
+            {#                        <div class="row d-flex align-items-center flex-wrap">#}
+            {#                            <div class="col-xl-5 col-lg-6 mb-5 mb-lg-0 text-center">#}
+            {#                                <img src="{% static 'images/casosexito/casos.jpg' %}" alt="alternative text"#}
+            {#                                     class="radius-main">#}
+            {#                            </div>#}
+            {#                            <div class="col-xl-6 offset-xl-1 col-lg-6 align-self-center">#}
+            {#                                <div class="ot-heading">#}
+            {#                                    <h2 class="font-weight-bold">Casos de Éxito</h2>#}
+            {#                                </div>#}
+            {#                                <div class="space-5"></div>#}
+            {#                                <div class="ot-testimonial-slider ot-testimonial-s2 ot-testi-h3 arr-vertical owl-carousel owl-theme">#}
+            {#                                    <div class="ot-testimonial-s2__item">#}
+            {#                                        <div class="tcontent mb-0">#}
+            {#                                            <div class="tdesc">Tengo la seguridad de que Allura respalda su producto#}
+            {#                                                y de que su equipo de#}
+            {#                                                ventas nos ofrece un servicio excepcional. Confío en que a medida#}
+            {#                                                que mi negocio#}
+            {#                                                crezca, Allura, junto con sus socios proveedores, nos permitirá#}
+            {#                                                satisfacer las#}
+            {#                                                necesidades de un mercado en crecimiento.#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                        <img style="max-width: 200px"#}
+            {#                                             src="{% static 'images/casosexito/casosexito_eureka_Log2.png' %}" alt="alternative text">#}
+            {#                                        <div class="tmeta ">#}
+            {#                                            <div class="tinfo">#}
+            {#                                                <h6>Capitol City Homes</h6>#}
+            {#                                                <span>Trey McDonald, Socio </span>#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                    </div>#}
+            {#                                    <div class="ot-testimonial-s2__item">#}
+            {#                                        <div class="tcontent mb-0">#}
+            {#                                            <div class="tdesc">Le debo todo a Duralit, sin duda es una empresa que#}
+            {#                                                ha marcado la vida de todos los bolivianos.#}
+            {#                                                Estoy orgulloso de ser parte de esta gran familia.#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                        <img style="max-width: 200px"#}
+            {#                                             src="{% static 'images/casosexito/casosexito_eureka_Log3.png' %}" alt="alternative text">#}
+            {#                                        <div class="tmeta ">#}
+            {#                                            <div class="tinfo">#}
+            {#                                                <h6>Duralit Región Oriente</h6>#}
+            {#                                                <span>Juan Carlos López</span>#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                    </div>#}
+            {#                                    <div class="ot-testimonial-s2__item">#}
+            {#                                        <div class="tcontent mb-0">#}
+            {#                                            <div class="tdesc">Tinacos EUREKA son garantía en calidad y resistencia,#}
+            {#                                                que cumple con las#}
+            {#                                                expectativas de nuestros clientes y es percibida#}
+            {#                                                como una empresa líder en sustentabilidad.#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                        <img style="max-width: 200px"#}
+            {#                                             src="{% static 'images/casosexito/casosexito_eureka_Log1.png' %}" alt="alternative text">#}
+            {#                                        <div class="tmeta ">#}
+            {#                                            <div class="tinfo">#}
+            {#                                                <h6>Tulipan Construcciones y Agregados SA#}
+            {#                                                    de CV.</h6>#}
+            {#                                                <span>José Alfredo Escayola, Manager</span>#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                    </div>#}
+            {#                                    <div class="ot-testimonial-s2__item">#}
+            {#                                        <div class="tcontent mb-0">#}
+            {#                                            <div class="tdesc">En su presentación de Galón y Cubeta, Pinturas#}
+            {#                                                COLORCEL ha tenido buena#}
+            {#                                                aceptación con mis clientes finales.#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                        <img style="max-width: 200px"#}
+            {#                                             src="{% static 'images/casosexito/casosexito_eureka_Log5.png' %}" alt="alternative text">#}
+            {#                                        <div class="tmeta ">#}
+            {#                                            <div class="tinfo">#}
+            {#                                                <h6>Alumex Ferrandi S.A. de C.V.</h6>#}
+            {#                                                <span>Ricardo Torres Esteban, Gerente#}
+            {#                                            Comercial</span>#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                    </div>#}
+            {#                                    <div class="ot-testimonial-s2__item">#}
+            {#                                        <div class="tcontent">#}
+            {#                                            <div class="tdesc">Todos mis proyectos los acompañan siempre los#}
+            {#                                                productos de la marca Plycem,#}
+            {#                                                por más de 50 años nos ha dado un gran respaldo.#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                        <img style="max-width: 200px"#}
+            {#                                             src="{% static 'images/casosexito/casosexito_eureka_Log4.png' %}" alt="alternative text">#}
+            {#                                        <div class="tmeta ">#}
+            {#                                            <div class="tinfo">#}
+            {#                                                <h6>Costa Rica</h6>#}
+            {#                                                <span>Kenneth Fernández Rivera, Maestro#}
+            {#                                            de Construcción</span>#}
+            {#                                            </div>#}
+            {#                                        </div>#}
+            {#                                    </div>#}
+            {#                                </div>#}
+            {#                            </div>#}
+            {#                        </div>#}
+            {#                        <div class="space-30 d-md-none"></div>#}
+            {#                    </div>#}
+            {#                </section>#}
+            {#            </div>#}
+        </div>
+    </section>
+{% endblock %}
+{% block otherscripts %}
+    <script src="{% static 'javascripts/wow.min.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/css/index_comp.min.css' %}?v=1.0.1"/>
+
+    <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.parallax.min.js' %}"></script>
+
+    <script src='{% static 'javascripts/fullcalendar/lib/main.js' %}'></script>
+    <script src='{% static 'javascripts/fullcalendar/lib/locales-all.js' %}'></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            if (calendarEl != null) {
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    eventDidMount: function (info) {
+                        info.el.setAttribute("data-toggle", 'tooltip');
+                        info.el.setAttribute("data-placement", 'top');
+                        info.el.setAttribute("data-title", info.event.extendedProps.description);
+                    },
+                    locale: 'es',
+                    height: 270,
+                    eventMouseEnter: function (mouseEnterInfo) {
+                        $(mouseEnterInfo.el).tooltip('show')
+                    }, eventMouseLeave: function (mouseEnterInfo) {
+                        $(mouseEnterInfo.el).tooltip('hide')
+                    },
+
+                    handleWindowResize: true,
+                    events: [
+                        {
+                            {#title: 'Reporte 3T21',#}
+                            description: 'Reporte 3T21',
+                            start: '2021-10-28',
+                            display: 'background',
+                            backgroundColor: '#EB8705'
+                        }, {
+                            {#title: 'Conferencia Telefónica 3T21 ',#}
+                            description: 'Conferencia Telefónica 3T21 ',
+                            start: '2021-10-29',
+                            display: 'background',
+                            backgroundColor: '#3DAE2B'
+                        }
+
+                    ]
+                });
+                calendar.render();
+            }
+        });
+    </script>
+
+    <script>
+        var tpj = jQuery;
+
+        var revapi202;
+        tpj(document).ready(function () {
+
+            $(".ot-testimonial-s2").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                loop: true,
+                responsiveClass: true,
+                dotsClass: 'owl-dots ot-custom-dots',
+                dots: false,
+                nav: true,
+                navText: ['<i role="presentation" class="icon-angle-left"></i>', '<i role="presentation" class="icon-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 30,
+                        autoplay: true,
+                    },
+                    768: {
+                        items: 1,
+                        margin: 30,
+                    },
+                    1024: {
+                        items: 1,
+                        margin: 30,
+                    }
+                }
+            });
+
+            if (tpj("#rev_slider_579_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_579_1");
+            } else {
+                revapi202 = tpj("#rev_slider_579_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "/static/javscripts/js/rs-plugin/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 16000,
+                    responsiveLevels: [1140, 992, 768, 480],
+                    visibilityLevels: [1140, 992, 768, 480],
+                    gridwidth: [1140, 992, 768, 480],
+                    gridheight: [700, 768, 960, 720],
+                    hideThumbs: 200,
+
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 5,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        disableFocusListener: false,
+                    },
+                    {#parallax: {#}
+                    {#    type: "mouse",#}
+                    {#    origo: "slidercenter",#}
+                    {#    speed: 300,#}
+                    {#    levels: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 49, 50, 51, 55],#}
+                    {# },#}
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        },
+                        arrows: {
+                            style: "persephone",//HEPHAISTOS,HERMES,HESPERIDEN,METIS,PERSEPHONE
+                            enable: true,
+                            {#    hide_onmobile: false,#}
+                            {#    hide_onleave: false,#}
+                            {#    tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div>	<div class="tp-arr-titleholder">{{title}}</div>	</div>',#}
+                            {#    left: {#}
+                            {#        h_align: "left",#}
+                            {#        v_align: "center",#}
+                            {#        h_offset: 10,#}
+                            {#        v_offset: 0#}
+                            {#    },#}
+                            {#    right: {#}
+                            {#        h_align: "right",#}
+                            {#        v_align: "center",#}
+                            {#        h_offset: 10,#}
+                            {#        v_offset: 0#}
+                            {#    }#}
+                        }
+                    },
+                    touchenabled: "on",
+                    onHoverStop: "on",
+                    swipe_velocity: 0.7,
+                    swipe_min_touches: 1,
+                    swipe_max_touches: 1,
+                    drag_block_vertical: false,
+                    keyboardNavigation: "off",
+                    shadow: 0,
+                    fullWidth: "off",
+                    fullScreen: "on",
+                    spinner: "spinner4",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    forceFullWidth: "off",
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                });
+                revapi202.bind("revolution.slide.onloaded", function (e) {
+                    setTimeout(function () {
+                        SEMICOLON.slider.sliderParallaxDimensions();
+                    }, 200);
+                });
+
+                revapi202.bind("revolution.slide.onchange", function (e, data) {
+                    SEMICOLON.slider.revolutionSliderMenu();
+                });
+            }
+
+            $(".g_btnRight").click(function () {
+                if ($("#vertuo").hasClass("extended")) {
+                    $("#original").animate({
+                        width: '50%'
+                    }, "slow");
+                    $("#vertuo").animate({
+                        width: "50%"
+                    }, "slow");
+                    $("#vertuo").removeClass("extended");
+                } else {
+                    $("#original").animate({
+                        width: '95%'
+                    }, "slow");
+                    $("#vertuo").animate({
+                        width: "5%"
+                    }, "slow");
+                    $("#original").addClass("extended");
+                    $("#vertuo").removeClass("extended");
+                }
+            });
+            $(".g_btnLeft").click(function () {
+                if ($("#original").hasClass("extended")) {
+                    $("#original").animate({
+                        width: '50%'
+                    }, "slow");
+                    $("#vertuo").animate({
+                        width: "50%"
+                    }, "slow");
+                    $("#original").removeClass("extended");
+                } else {
+                    $("#vertuo").animate({
+                        width: '95%'
+                    }, "slow");
+                    $("#original").animate({
+                        width: "5%"
+                    }, "slow");
+                    $("#original").removeClass("extended");
+                    $("#vertuo").addClass("extended");
+                }
+            });
+        });
+        {#setTimeout(function () {#}
+        {#    SEMICOLON.carouselContainer["oc-clients"].trigger('refresh.owl.carousel')#}
+        {# }, 200, {});#}
+
+        /*ready*/
+    </script>
+
+    <script>
+        function isScrolledIntoView(el) {
+            if (el != null) {
+                var elemTop = el.getBoundingClientRect().top;
+                var elemBottom = el.getBoundingClientRect().bottom;
+
+                var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+                return isVisible;
+            }
+        }
+
+        $(window).scroll(function () {
+            if (isScrolledIntoView(document.getElementById('wprt-counter-index'))) {
+                $('#wprt-counter-index').find('.number').each(function () {
+                    var to = parseFloat($(this).data('to')),
+                        speed = parseInt($(this).data('speed')),
+                        decimals = parseInt($(this).data('decimals'));
+
+                    $(this).countTo({
+                        to: to,
+                        speen: speed,
+                        decimals: decimals,
+                        formatter: function (value, options) {
+                            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            ;
+                        },
+                        onComplete: function (value) {
+                            if (value === 1.9)
+                                return this.innerHTML += '%';
+                        }
+                    });
+                });
+
+                // Unbind scroll event
+                $(window).off('scroll');
+            }
+        });
+    </script>
+{% endblock %}
