@@ -4,13 +4,40 @@
 
 <ul>
     <li>
-        <a href="{% url 'acerca-de' %}">
+        <a href="#">
             <div>{% trans 'Nosotros' %}</div>
+        </a>
+        <ul>
+            <li class="{% if page == 'perfil' %}current{% endif %}">
+                <a href="{% url 'perfil' %}">
+                    <div>{% trans "Perfil" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'historia' %}current{% endif %}">
+                <a href="{% url 'historia' %}">
+                    <div>{% trans "Historia" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'estrategia' %}current{% endif %}">
+                <a href="{% url 'estrategia' %}">
+                    <div>{% trans "Estrategia" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'equipo-directivo' %}current{% endif %}">
+                <a href="{% url 'equipo-directivo' %}">
+                    <div>{% trans "Equipo directivo" %}</div>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="{% url 'propiedades' %}">
+            <div>{% trans 'Propiedades' %}</div>
         </a>
     </li>
     <li>
-        <a href="{% url 'negocios' %}">
-            <div>{% trans 'Nuestras empresas' %}</div>
+        <a href="{% url 'inversionistas' %}">
+            <div>{% trans 'Inversionistas' %}</div>
         </a>
     </li>
     <li>
@@ -23,53 +50,26 @@
         {#                    <div>{% trans "¿Qué es?" %}</div>#}
         {#                </a>#}
         {#            </li>#}
-        {#            <li class="{% if page == 'grupos' %}current{% endif %}">#}
-        {#                <a href="{% url 'grupos' %}">#}
-        {#                    <div>{% trans "Grupos de Interés y Materialidad" %}</div>#}
-        {#                </a>#}
-        {#            </li>#}
-        {#            <li class="{% if page == 'desempeno_social' %}current{% endif %}"><a href="{% url 'desempeno_social' %}">#}
-        {#                <div>{% trans "Desempeño social" %}</div>#}
-        {#            </a></li>#}
-        {#                    <li class="{% if page == 'desempeno_ambiental' %}current{% endif %}"><a href="{% url 'desempeno_ambiental' %}">#}
-        {#            <li class="{% if page == 'desempeno_ambiental' %}current{% endif %}"><a#}
-        {#                    href="{% url 'desempeno_ambiental' %}">#}
-        {#                <div>{% trans "Desempeño ambiental" %}</div>#}
-        {#            </a></li>#}
-        {#            <li class="{% if page == 'publicaciones' %}current{% endif %}"><a href="{% url 'publicaciones' %}">#}
-        {#                <div>{% trans "Publicaciones" %}</div>#}
-        {#            </a></li>#}
         {#        </ul>#}
-    </li>
-    <li>
-        <a href="https://www.rielementiamateriales.com/{% if request.LANGUAGE_CODE == 'en' %}en/{% endif %} " aria-label="this opens in a new tab" target="_blank">
-
-            <div>{% trans 'Inversionistas' %}</div>
-        </a>
-    </li>
-    <li>
-        <a href="{% url 'empleo' %}">
-            <div>{% trans 'Empleo' %}</div>
-        </a>
     </li>
     <li>
         <a href="{% url 'contacto' %}">
             <div>{% trans 'Contacto' %}</div>
         </a>
     </li>
-<li>
-    <div class="{{ request.LANGUAGE_CODE }} ml-xl-5">
+    <li>
+        <div class="{{ request.LANGUAGE_CODE }} ml-xl-5">
 
-        {#        <a class="cart-btn mr-3"  href="{% url 'prensa' %}">#}
-        {#            <span>{% trans 'Sala de Prensa' %}</span>#}
-        {#        </a>#}
+            {#        <a class="cart-btn mr-3"  href="{% url 'prensa' %}">#}
+            {#            <span>{% trans 'Sala de Prensa' %}</span>#}
+            {#        </a>#}
 
-        <a class=" cart-btn  {% if request.LANGUAGE_CODE == 'es' %}active{% endif %}"
-           href="{% change_lang 'es' %}">ES </a>|
-        <a class="cart-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}"
-           href="{% change_lang 'en' %}">EN</a>
-    </div>
-</li>
+            <a class=" cart-btn  {% if request.LANGUAGE_CODE == 'es' %}active{% endif %}"
+               href="{% change_lang 'es' %}">ES </a>|
+            <a class="cart-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}"
+               href="{% change_lang 'en' %}">EN</a>
+        </div>
+    </li>
 
 </ul>
 

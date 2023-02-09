@@ -24,6 +24,278 @@ def index(request):
     return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
 
 
+# Nosotros
+@gzip_page
+def perfil(request):
+    context = {
+        'title': _("Perfil"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'perfil',
+        'section': _('Nosotros')
+    }
+    return render(request, '{0}/frontend/nosotros/perfil.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def historia(request):
+    context = {
+        'title': _("Historia"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'historia',
+        'section': _('Nosotros')
+    }
+    return render(request, '{0}/frontend/nosotros/historia.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def estrategia(request):
+    context = {
+        'title': _("Estrategia"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'estrategia',
+        'section': _('Nosotros')
+    }
+    return render(request, '{0}/frontend/nosotros/estrategia.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def equipo_directivo(request):
+    context = {
+        'title': _("Equipo directivo"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'equipo-directivo',
+        'section': _('Nosotros')
+    }
+    return render(request, '{0}/frontend/nosotros/equipo_directivo.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Propiedades
+@gzip_page
+def propiedades(request):
+    context = {
+        'title': _("Propiedades"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'propiedades',
+        'section': _('Propiedades')
+    }
+    return render(request, '{0}/frontend/propiedades.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Inversionistas
+@gzip_page
+def inversionistas(request):
+    context = {
+        'title': _("Inversionistas"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'inversionistas',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/inversionistas.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Financiera
+@gzip_page
+def resultados_trimestrales(request):
+    context = {
+        'title': _("Resultados trimestrales"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'resultados-trimestrales',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/resultados_trimestrales.html'.format(request.LANGUAGE_CODE),
+                  context)
+
+
+@gzip_page
+def resultados_anuales(request):
+    context = {
+        'title': _("Resultados anuales"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'resultados-anuales',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/resultados_anuales.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def preguntas_frecuentes(request):
+    context = {
+        'title': _("Preguntas frecuentes"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'preguntas-frecuentes',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/preguntas_frecuentes.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def glosario(request):
+    context = {
+        'title': _("Glosario"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'glosario',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/glosario.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def glosario(request):
+    context = {
+        'title': _("Glosario"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'glosario',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/glosario.html'.format(request.LANGUAGE_CODE),
+                  context)
+
+
+@gzip_page
+def sala_prensa(request):
+    context = {
+        'title': _("Sala de prensa"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'sala-prensa',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/sala_prensa.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def documentos_relevantes(request):
+    context = {
+        'title': _("Documentos relevantes"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'documentos-relevantes',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/financiera/documentos_relevantes.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Gobierno
+@gzip_page
+def comite_tecnico(request):
+    context = {
+        'title': _("Comité técnico"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'comite-tecnico',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/gobierno/comite_tecnico.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def otros_comites(request):
+    context = {
+        'title': _("Otros comités"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'otros-comites',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/gobierno/otros_comites.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def principales_tenedores(request):
+    context = {
+        'title': _("Principales tenedores"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'principales-tenedores',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/gobierno/principales_tenedores.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def estructura_corporativa(request):
+    context = {
+        'title': _("Estructura corporativa"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'principales-tenedores',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/gobierno/estructura_corporativa.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def auditor_externo(request):
+    context = {
+        'title': _("Auditor externo"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'auditor-externo',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/gobierno/auditor_externo.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Bursátil
+@gzip_page
+def cotizacion(request):
+    context = {
+        'title': _("Cotización"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'cotizacion',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/bursatil/cotizacion.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def distribuciones_efectivo(request):
+    context = {
+        'title': _("Distribuciones de efectivo"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'distribuciones-efectivo',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/bursatil/distribuciones_efectivo.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def cobertura_analistas(request):
+    context = {
+        'title': _("Cobertura de analistas"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'cobertura-analistas',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/bursatil/cobertura_analistas.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def deuda(request):
+    context = {
+        'title': _("Deuda"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'deuda',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/bursatil/deuda.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def prospectos(request):
+    context = {
+        'title': _("Prospectos"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'prospectos',
+        'section': _('Inversionistas')
+    }
+    return render(request, '{0}/frontend/bursatil/prospectos.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Sustentabilidad
+def sustentabilidad(request):
+    context = {
+        'title': _("Sustentabilidad"),
+        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'page': 'sustentabilidad',
+        'section': _('Sustentabilidad')
+    }
+    return render(request, '{0}/frontend/sustentabilidad/sustentabilidad.html'.format(request.LANGUAGE_CODE), context)
+
+
 @gzip_page
 def contacto(request):
     if request.LANGUAGE_CODE == 'es':
@@ -35,287 +307,6 @@ def contacto(request):
         'title': _("Contacto"),
         'section': _('Contacto'),
         'imagen': imagen,
-    }
-    return render(request, '{0}/frontend/contacto.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def responsabilidad(request):
-    context = {
-        'title': _("Responsabilidad_social"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/responsabilidad.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def acerca_de(request):
-    if request.LANGUAGE_CODE == 'es':
-        imagen = staticfiles_storage.url('images/header-nosotros.png')
-    else:
-        imagen = staticfiles_storage.url('images/about-us.png')
-
-    context = {
-        'title': _("Sobre nosotros"),
-        'section': _('Perfil'),
-        'page': "acerca-de",
-        'imagen': imagen,
-    }
-    return render(request, '{0}/frontend/nosotros/acerca_de.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def trayectoria(request):
-    context = {
-        'title': _("Nuestra trayectoria"),
-        'section': _('Perfil'),
-        'page': "trayectoria",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/trayectoria.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def cultura(request):
-    context = {
-        'title': _("Nuestra cultura"),
-        'section': _('Perfil'),
-        'page': "cultura",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/cultura.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def trabaja(request):
-    context = {
-        'title': _("Trabaja con Nosotros"),
-        'section': _('Perfil'),
-        'page': "cultura",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/trabaja.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def identidad(request):
-    context = {
-        'title': _("Nuestra identidad corporativa"),
-        'section': _('Perfil'),
-        'page': "identidad",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/identidad.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def negocios(request):
-    if request.LANGUAGE_CODE == 'es':
-        imagen = staticfiles_storage.url('images/header-nuestras-empresas-NEW.png')
-    else:
-        imagen = staticfiles_storage.url('images/our-companies.png')
-
-    context = {
-        'title': _("Nuestras Empresas"),
-        'section': _('Perfil'),
-        'page': "negocios",
-        'imagen': imagen,
-    }
-    return render(request, '{0}/frontend/nosotros/negocios.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def construsistemas(request):
-    context = {
-        'title': _("Construsistemas"),
-        'section': _('Perfil'),
-        'page': "construsistemas",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/construsistemas.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def proveedores(request):
-    context = {
-        'title': _("Proveedores"),
-        'section': _('Proveedores'),
-        'page': "proveedores",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/proveedores.html'.format(request.LANGUAGE_CODE), context)
-
-
-def clientes(request):
-    context = {
-        'title': _("Clientes"),
-        'section': _('Clientes'),
-        'page': "clientes",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/clientes.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def funcionarios(request):
-    context = {
-        'title': _("Principales funcionarios"),
-        'section': _('Perfil'),
-        'page': "acerca-de",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/funcionarios.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def consejo_administracion(request):
-    context = {
-        'title': _("Consejo de administración"),
-        'section': _('Perfil'),
-        'page': "acerca-de",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/consejo_administracion.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def aspectos_destacados(request):
-    context = {
-        'title': _("Aspectos destacados"),
-        'section': _('Perfil'),
-        'page': "acerca-de",
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/aspectos_destacados.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def historia(request):
-    context = {
-        'title': _("Historia"),
-        'section': _('Perfil'), 'sectionp': _('about'),
-        'page': 'historia',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/historia.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def estrategia(request):
-    context = {
-        'title': _("Estrategia de negocio"),
-        'section': _('Perfil'), 'sectionp': _('about'),
-        'page': 'estrategia',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/estrategia.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def alianzas(request):
-    context = {
-        'title': _("Alianzas estratégicas"),
-        'section': _('Perfil'), 'sectionp': _('about'),
-        'page': 'alianza',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/alianzas.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def panorama(request):
-    context = {
-        'title': _("Panorama"),
-        'section': _('Perfil'), 'sectionp': _('about'),
-        'page': 'panorama',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/nosotros/panorama.html'.format(request.LANGUAGE_CODE), context)
-
-
-########### GOBIERNO COORPORATIVO ########
-def directivos(request):
-    context = {
-        'title': _("Equipo directivo"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/directivos.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def compensacion(request):
-    context = {
-        'title': _("Plan de compensación"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/plan_compensacion.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def consejo(request):
-    context = {
-        'title': _("Consejo de administración"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/consejo.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def comites(request):
-    context = {
-        'title': _("Comites"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/comites.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def estructura(request):
-    context = {
-        'title': _("Estructura_Corporativa"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/estructura.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def documentos(request):
-    context = {
-        'title': _("Documentos corporativos"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/documentos.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
-def esg(request):
-    context = {
-        'title': _("ESG"),
-        'section': _('Gobierno_Corporativo'),
-        'page': 'gobierno',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/gobierno/esg.html'.format(request.LANGUAGE_CODE), context)
-
-
-########### informacion financiera ###########
-
-
-def informacion(request):
-    context = {
-        'title': _("Informacion de la Deuda"),
     }
     return render(request, '{0}/frontend/contacto.html'.format(request.LANGUAGE_CODE), context)
 
@@ -349,7 +340,7 @@ def send_mail_contact(request):
         'Usuario anónimo desea contactar con admin del sitio Elementia Materiales',
         '',
         'it@investorcloud.net',
-        [theme,'it@irstrat.com','jsaucedag@elementia.com' ],  # ['info@murano.com.mx',],
+        [theme, 'it@irstrat.com', 'jsaucedag@elementia.com'],  # ['info@murano.com.mx',],
         html_message=html_message
     )
     return JsonResponse({"success": "true"}, safe=False)
@@ -364,7 +355,7 @@ def denuncia(request):
     context = {
         'title': _("Canal de Denuncias"),
         'imagen': imagen,
-        'page':'denuncia'
+        'page': 'denuncia'
     }
     return render(request, '{0}/frontend/denuncia.html'.format(request.LANGUAGE_CODE), context)
 
@@ -405,323 +396,6 @@ def send_denuncia(request):
     return JsonResponse({"success": "true"}, safe=False)
 
 
-# @login_required
-def cifras(request):
-    context = {
-        'title': _("Cifras_principales"),
-        'section': 'infofinanciera',
-        'page': 'cifras',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/cifras.html'.format(request.LANGUAGE_CODE), context)
-
-
-def faq(request):
-    context = {
-        'title': _("Preguntas_frecuentes"),
-        'section': 'infofinanciera',
-        'page': 'faq',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/faq.html'.format(request.LANGUAGE_CODE), context)
-
-
-def glosario(request):
-    context = {
-        'title': _("Glosario"),
-        'section': 'infofinanciera',
-        'page': 'glosario',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/glosario.html'.format(request.LANGUAGE_CODE), context)
-
-
-def eventos(request):
-    context = {
-        'title': _("Documentos relevantes"),
-        'section': 'infofinanciera',
-        'page': 'eventos',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/eventos.html'.format(request.LANGUAGE_CODE), context)
-
-
-def comunicados(request):
-    if request.LANGUAGE_CODE == 'es':
-        comunicados = requests.get(
-            request._get_scheme() + '://' + request.get_host() + '/static/datos/comunicados.json').json()
-    else:
-        comunicados = requests.get(
-            request._get_scheme() + '://' + request.get_host() + '/static/datos/comunicados_en.json').json()
-    context = {
-        'title': _("Eventos Relevantes"),
-        'section': 'infofinanciera',
-        'page': 'comunicados',
-        'comunicados': comunicados,
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/comunicados.html'.format(request.LANGUAGE_CODE), context)
-
-
-def proximos_eventos(request):
-    context = {
-        'title': _("Próximos eventos"),
-        'section': 'infofinanciera',
-        'page': 'proximos_eventos',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/proximos_eventos.html'.format(request.LANGUAGE_CODE), context)
-
-
-def reportes(request):
-    context = {
-        'title': _("Reportes_de_resultados"),
-        'section': 'infofinanciera',
-        'page': 'reportes',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/reportes.html'.format(request.LANGUAGE_CODE), context)
-
-
-def reportes_financieros(request):
-    context = {
-        'title': _("Reportes financieros"),
-        'section': 'infofinanciera',
-        'page': 'reportes_financieros',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/reportes_financieros.html'.format(request.LANGUAGE_CODE), context)
-
-
-def conferencia(request):
-    context = {
-        'title': _("Conferencia Telefónica"),
-        'section': 'infofinanciera',
-        'page': 'conferencia',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/financiera/conferencia.html'.format(request.LANGUAGE_CODE), context)
-
-
-#################informacion BURSATIL ##################
-def asamblea(request):
-    context = {
-        'title': _("Asamblea de tenedores"),
-        'section': 'infofinanciera',
-        'page': 'reportes',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/asamblea.html'.format(request.LANGUAGE_CODE), context)
-
-
-def accion(request):
-    context = {
-        'title': _("Información de la acción"),
-        'section': 'Información para accionistas',
-        'page': 'accion',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/accion.html'.format(request.LANGUAGE_CODE), context)
-
-
-def historicos(request):
-    context = {
-        'title': _("Búsqueda de precios históricos"),
-        'section': 'Información para accionistas',
-        'page': 'historico',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/precios_historicos.html'.format(request.LANGUAGE_CODE), context)
-
-
-def calculadora(request):
-    context = {
-        'title': _("Calculadora de rendimientos"),
-        'section': 'Información para accionistas',
-        'page': 'calculadora',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/calculadora.html'.format(request.LANGUAGE_CODE), context)
-
-
-def cobertura(request):
-    context = {
-        'title': _("Cobertura de analistas"),
-        'section': 'Información para accionistas',
-        'page': 'cobertura',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/cobertura.html'.format(request.LANGUAGE_CODE), context)
-
-
-def cerpis(request):
-    context = {
-        'title': _("Programa de CERPIs"),
-        'section': 'infobursatil',
-        'page': 'bursatil',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/cerpis.html'.format(request.LANGUAGE_CODE), context)
-
-
-def administrador(request):
-    context = {
-        'title': _("administrador"),
-        'section': 'infobursatil',
-        'page': 'bursatil',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/administrador.html'.format(request.LANGUAGE_CODE), context)
-
-
-def calificaciones(request):
-    context = {
-        'title': _("Colocaciones"),
-        'section': 'infofinanciera',
-        'page': 'reportes',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/calificaciones.html'.format(request.LANGUAGE_CODE), context)
-
-
-def prospectos(request):
-    context = {
-        'title': _("Prospectos y documentos de emisión"),
-        'section': 'infofinanciera',
-        'page': 'reportes',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/bursatil/prospecto.html'.format(request.LANGUAGE_CODE), context)
-
-
-def prensa(request):
-    if request.LANGUAGE_CODE == 'es':
-        comunicados = requests.get(
-            request._get_scheme() + '://' + request.get_host() + '/static/datos/comunicados.json').json()
-    else:
-        comunicados = requests.get(
-            request._get_scheme() + '://' + request.get_host() + '/static/datos/comunicados_en.json').json()
-    context = {
-        'title': _("SALA DE PRENSA"),
-        'section': _("SALA DE PRENSA"),
-        'page': 'prensa',
-        'comunicados': comunicados,
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/prensa.html'.format(request.LANGUAGE_CODE), context)
-
-
-##PORTAFOLIO
-def concepto_plaza(request):
-    context = {
-        'title': _("Concepto Plaza Sendero"),
-        'section': _("Portafolio"),
-        'page': 'concepto plaza sendero',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/concepto_plaza.html'.format(request.LANGUAGE_CODE), context)
-
-
-def resumen_operativo(request):
-    context = {
-        'title': _("Resumen operativo"),
-        'section': _("Portafolio"),
-        'page': 'Resumen operativo',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/resumen_operativo.html'.format(request.LANGUAGE_CODE), context)
-
-
-def arrendatarios(request):
-    context = {
-        'title': _("Arrendatarios"),
-        'section': _("Portafolio"),
-        'page': 'Arrendatarios',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/arrendatarios.html'.format(request.LANGUAGE_CODE), context)
-
-
-def propiedades(request):
-    context = {
-        'title': _("Portafolio_t"),
-        'section': _("Portafolio"),
-        'page': 'propiedades',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/propiedades.html'.format(request.LANGUAGE_CODE), context)
-
-
-def anteriores(request):
-    context = {
-        'title': _("anteriores"),
-        'section': _("Portafolio"),
-        'page': 'propiedades',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/anteriores.html'.format(request.LANGUAGE_CODE), context)
-
-
-def cancun(request):
-    context = {
-        'title': _("Grand Island Cancún I"),
-        'section': _("Portafolio"),
-        'page': 'cancun',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/cancun.html'.format(request.LANGUAGE_CODE), context)
-
-
-def marina_vallarta(request):
-    context = {
-        'title': _("Marina Vallarta"),
-        'section': _("Portafolio"),
-        'page': 'marina-vallarta',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/marina-vallarta.html'.format(request.LANGUAGE_CODE), context)
-
-
-def wyndham_condesa(request):
-    context = {
-        'title': _("Wyndham Grand Condesa"),
-        'section': _("Portafolio"),
-        'page': 'wyndham-condesa',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/wyndham-condesa.html'.format(request.LANGUAGE_CODE), context)
-
-
-def cancun2(request):
-    context = {
-        'title': _("Grand Island Cancún II"),
-        'section': _("Portafolio"),
-        'page': 'cancun2',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/cancun2.html'.format(request.LANGUAGE_CODE), context)
-
-
-def dreams(request):
-    context = {
-        'title': _("Dreams Chateau Baja"),
-        'section': _("Portafolio"),
-        'page': 'dreams',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/dreams.html'.format(request.LANGUAGE_CODE), context)
-
-
-def parque(request):
-    context = {
-        'title': _("Baja Park"),
-        'section': _("Portafolio"),
-        'page': 'parque',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/portafolio/parque.html'.format(request.LANGUAGE_CODE), context)
-
-
 @require_POST
 def send_subscription(request):
     context = {'title': 'Inicio'}
@@ -735,81 +409,7 @@ def send_subscription(request):
     return JsonResponse({"success": "true"}, safe=False)
 
 
-def esg(request):
-    context = {
-        'title': _("ESG"),
-        'section': _("ESG"),
-        'page': 'esg',
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/esg.html'.format(request.LANGUAGE_CODE), context)
-
-
-def sustentabilidad(request):
-    if request.LANGUAGE_CODE == 'es':
-        imagen = staticfiles_storage.url('images/header-sustentabilidad-NEW.png')
-    else:
-        imagen = staticfiles_storage.url('images/header-sustainability.png')
-
-    context = {
-        'title': _("Sustentabilidad"),
-        'imagen': imagen,
-    }
-    return render(request, '{0}/frontend/sustentabilidad/sustentabilidad.html'.format(request.LANGUAGE_CODE), context)
-
-
-def que_es(request):
-    context = {
-        'title': _("¿Qué es?"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/sustentabilidad/que_es.html'.format(request.LANGUAGE_CODE), context)
-
-
-def publicaciones(request):
-    if request.LANGUAGE_CODE == 'es':
-        imagen = staticfiles_storage.url('images/publicaciones-NEW.png')
-    else:
-        imagen = staticfiles_storage.url('images/releases.png')
-
-    comunicados = [{
-        "documento": "https://investorcloud.s3.amazonaws.com/corporativoelementia/ReportesAnuales/Informe-anual-2021.pdf",
-        "titulo": "Informe Anual 2021",
-        "titulo_en":"Annual Report 2021",
-        "fecha": "05/05/2022",
-    }]
-    context = {
-        'title': _("Publicaciones"),
-        'comunicados': comunicados,
-        'imagen': imagen,
-    }
-    return render(request, '{0}/frontend/sustentabilidad/publicaciones.html'.format(request.LANGUAGE_CODE), context)
-
-
-def grupos(request):
-    context = {
-        'title': _("Grupos de interes y materialidad"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/sustentabilidad/grupos.html'.format(request.LANGUAGE_CODE), context)
-
-
-def desempeno_social(request):
-    context = {
-        'title': _("Desempeño Social"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/sustentabilidad/desempeno_social.html'.format(request.LANGUAGE_CODE), context)
-
-
-def desempeno_ambiental(request):
-    context = {
-        'title': _("Desempeño Ambiental"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-    }
-    return render(request, '{0}/frontend/sustentabilidad/desempeno_ambiental.html'.format(request.LANGUAGE_CODE),
-                  context)
-
+@gzip_page
 def resultados(request):
     context = {
         'title': _("Resultados"),
@@ -817,15 +417,16 @@ def resultados(request):
     }
     return render(request, '{0}/frontend/resultados.html'.format(request.LANGUAGE_CODE),
                   context)
-def empleo(request):
-    if request.LANGUAGE_CODE == 'es':
-        imagen = staticfiles_storage.url('images/header-empleo-2.png')
-    else:
-        imagen = staticfiles_storage.url('images/careers.png')
 
-    context = {
-        'title': _("Empleo"),
-        'imagen': imagen,
-    }
-    return render(request, '{0}/frontend/empleo.html'.format(request.LANGUAGE_CODE),
-                  context)
+
+@require_POST
+def send_subscription(request):
+    context = {'title': 'Inicio'}
+    email = request.POST['subscription']
+    send_mail(
+        'Usuario ' + email + ' desea subscribirse al  sitio Murano',
+        'Usuario con email ' + email + " desea subscribirse",
+        'it@irstrat.com',
+        ['it@irstrat.com'],  # ['info@murano.com.mx','it@irstrat.com'],
+    )
+    return JsonResponse({"success": "true"}, safe=False)
