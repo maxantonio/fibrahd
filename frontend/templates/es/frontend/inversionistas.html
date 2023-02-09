@@ -1,5 +1,5 @@
 {% extends 'layouts/interior.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block otherstyles %}
 {% endblock %}
@@ -7,9 +7,37 @@
 {% block wrapper %}
     <div class="content-wrap pt-5 pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    {{ title }}
+            <div class="row inversionistas">
+                <div class="col-md-4 mb-5">
+                    <h3>INFORMACIÓN FINANCIERA</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{% url 'resultados-trimestrales' %}">{% trans 'Resultados trimestrales' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'resultados-anuales' %}">{% trans 'Resultados anuales' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'preguntas-frecuentes' %}">{% trans 'Preguntas frecuentes' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'glosario' %}">{% trans 'Glosario' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'sala-prensa' %}">{% trans 'Sala de prensa' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'documentos-relevantes' %}">{% trans 'Documentos relevantes ' %}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>GOBIERNO CORPORATIVO</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{% url 'comite-tecnico' %}">{% trans 'Comité técnico' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'otros-comites' %}">{% trans 'Otros comités' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'principales-tenedores' %}">{% trans 'Principales tenedores' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'estructura-corporativa' %}">{% trans 'Estructura corporativa' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'auditor-externo' %}">{% trans 'Auditor externo' %}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>INFORMACIÓN BURSÁTIL</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{% url 'cotizacion' %}">{% trans 'Cotización' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'distribuciones-efectivo' %}">{% trans 'Distribuciones de efectivo' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'cobertura-analistas' %}">{% trans 'Cobertura de analistas' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'deuda' %}">{% trans 'Deuda' %}</a></li>
+                        <li class="list-group-item"><a href="{% url 'prospectos' %}">{% trans 'Prospectos' %}</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
