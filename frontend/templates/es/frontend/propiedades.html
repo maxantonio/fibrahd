@@ -8,9 +8,795 @@
     <div class="content-wrap pt-5 pb-5 mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    {{ title }}
+                <div class="col-12 text-center">
+                    <h2 class="green-hd font-weight-bold">Nuestro portafolio</h2>
                 </div>
+                <div class="col-12">
+                    <p>Nuestro portafolio está organizado de manera dinámica, incorporando Bienes Inmuebles, ubicados en
+                        segmentos fragmentados del mercado; donde los rendimientos son altos, procurando siempre
+                        diversificar la Cartera para mitigar la volatilidad agregada de dichos flujos, protegiéndolas
+                        financieramente y permitiendo que inviertas de manera segura.</p>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h2 class="green-hd font-weight-bold mb-2">41</h2>
+                    <h4>Propiedades</h4>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h2 class="green-hd font-weight-bold mb-2">310,339</h2>
+                    <h4>ABR</h4>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h2 class="green-hd font-weight-bold mb-2">95%</h2>
+                    <h4>Ocupación</h4>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h2 class="green-hd font-weight-bold mb-2">521</h2>
+                    <h4>Inquilinos</h4>
+                </div>
+
+                <div class="col-12 text-center">
+                    <h2 class="green-hd font-weight-bold">Portafolio Fibra HD</h2>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/NaveIndustrial-Villahermosa-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_nave_villahermosa_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_nave_villahermosa_path(locale: I18n.locale.to_s%}">Nave
+                                Industrial Villahermosa</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Villahermosa, Tabasco </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Heineken-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_nave_heineken_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_nave_heineken_path(locale: I18n.locale.to_s%}">Nave
+                                Industrial Heineken</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chimalhuacán, Estado de México </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Veritv-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_nave_veritiv_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_nave_veritiv_path(locale: I18n.locale.to_s%}">Nave
+                                Industrial Veritiv</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Nogales, Sonora </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Ensambles-Hyson-05.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_hyson_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_hyson_path(locale: I18n.locale.to_s%}">Ensambles Hyson</a>
+                            </h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Nogales, Sonora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-SQM-Manzanillo-05.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_sqm_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_sqm_path(locale: I18n.locale.to_s%}">SQM</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Manzanillo, Colima </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Aeroespacial-Daher-05.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_daher_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_daher_path(locale: I18n.locale.to_s%}">Aeroespacial
+                                Daher</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Nogales, Sonora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Esquimal-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_esquimal_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_esquimal_path(locale: I18n.locale.to_s%}">Industrial
+                                Esquimal</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Aguascalientes, Aguascalientes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Ternium-02.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_nave_ternium_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_nave_ternium_path(locale: I18n.locale.to_s%}">Nave
+                                Industrial Ternium</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Naucalpan, Estado de México </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/Nave-Industrial-Durango-05.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_nave_durango_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_nave_durango_path(locale: I18n.locale.to_s%}">Yazaki</a>
+                            </h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Durango, Durango </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin industrial fhd-->
+            <!--inicio comercial fhd-->
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-carmen-center-03.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_carmen_center_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_carmen_center_path(locale: I18n.locale.to_s%}">Plaza
+                                Carmen Center</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad del Carmen, Campeche</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-lomas-verdes-07.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_lomas_verdes_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_lomas_verdes_path(locale: I18n.locale.to_s%}">Plaza
+                                Lomas Verdes</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Naucalpan, Edo de México </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-punto-chapultepec-07.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_punto_chapultepec_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_punto_chapultepec_path(locale: I18n.locale.to_s%}">Plaza
+                                Punto Chapultepec</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Guadalajara, Jalisco </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-catavina-03.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_catavina_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_catavina_path(locale: I18n.locale.to_s%}">Plaza
+                                Cataviña</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Mexicali, Baja California</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-casa-grande-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_casa_grande_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_casa_grande_path(locale: I18n.locale.to_s%}">Plaza
+                                Casa Grande</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Saltillo, Coahuila </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-punto-monchis-08.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_punto_mochis_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_punto_mochis_path(locale: I18n.locale.to_s%}">Plaza
+                                Punto Monchis</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Mochis, Sinaloa </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-la-roca-11.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_roca_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_roca_path(locale: I18n.locale.to_s%}">Plaza La
+                                Roca</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Cancún, Quintana Roo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-corales-03.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_corales_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_corales_path(locale: I18n.locale.to_s%}">Plaza Los
+                                Corales</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Veracruz, Veracruz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-parque-san-antonio-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_san_antonio_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_san_antonio_path(locale: I18n.locale.to_s%}">Plaza
+                                San Antonio</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Del. Álvaro Obregón, CDMX </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-portafolio-burger-king-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_portafolio_buger_king_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_portafolio_buger_king_path(locale: I18n.locale.to_s%}">Portafolio
+                                Stand Alone de Burger King</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Sonora, Sinaloa y Baja California</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-barrio-reforma-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_barrio_reforma_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_barrio_reforma_path(locale: I18n.locale.to_s%}">Barrio
+                                Reforma</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Del. Juárez, CDMX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-chimalhuacan-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_chimalhuacan_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_chimalhuacan_path(locale: I18n.locale.to_s%}">Plaza
+                                Chimalhuacán</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chimalhuacán, Estado de México</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-peninsula-02.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_peninsula_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_peninsula_path(locale: I18n.locale.to_s%}">Plaza
+                                Peninsula</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Cabo San Lucas, Baja California Sur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-via-san-juan-03.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_san_juan_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_san_juan_path(locale: I18n.locale.to_s%}">Plaza Vía
+                                San Juan</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> CDMX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-zuzuki-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_zuzuki_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_zuzuki_path(locale: I18n.locale.to_s%}">Agencia Suzuki</a>
+                            </h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>La Paz, Baja California Sur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-plaza-pilita-04.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_plaza_pilita_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_plaza_pilita_path(locale: I18n.locale.to_s%}">Plaza La
+                                Pilita</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Metepec, Estado de México</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-portafolio-olabs-03.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_portafolio_olab_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_portafolio_olab_path(locale: I18n.locale.to_s%}">Portafolio
+                                Olab</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Estado y Ciudad de México</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/comercial-portafolio-bodega-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_portafolio_bodega_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_portafolio_bodega_path(locale: I18n.locale.to_s%}">Portafolio
+                                Bodega Aurera Express</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Estado y Ciudad de México</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--fin comercial fhd-->
+            <!--inicio educacion fhd-->
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/educativo-uvm-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_uvm_nogales_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_uvm_nogales_path(locale: I18n.locale.to_s%}">UVM Campus
+                                Nogales</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Nogales, Sonora</p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-md-4 col-sm-6 mb-4">
+                  <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                    <div class="at-property-img">
+                      <img src="{% static 'images/fibrahd/propiedades/educativo-piaget-01.png'%}" alt="">
+                      <div class="at-property-overlayer"></div>
+                      <a class="btn btn-default at-property-btn" href="<%= proyectos_fhd_piaget_path(locale: I18n.locale.to_s%}" role="button">Ver Detalles</a>
+                    </div>
+                    <div class="at-property-location">
+                      <h4><i class="fa fa-home" aria-hidden="true"></i><a href="<%= proyectos_fhd_piaget_path(locale: I18n.locale.to_s%}">Instituto Piaget</a></h4>
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i>Mochis Sinaloa</p>
+                    </div>
+                  </div>
+                </div>-->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/educativo-celta-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_celta_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_celta_path(locale: I18n.locale.to_s%}">Colegio Celta
+                                Internacional</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Corregidora, Querétaro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/educativo-calma-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_campus_calma_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_campus_calma_path(locale: I18n.locale.to_s%}">Colegio
+                                México Nuevo Campus La Calma</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Zapopan, Jalisco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/educativo-ipeth-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_ipeth_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_ipeth_path(locale: I18n.locale.to_s%}">Ipeth</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Puebla, Puebla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/educativo-queretaro-02.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_colegio_queretaro_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_colegio_queretaro_path(locale: I18n.locale.to_s%}">Colegio
+                                Técnico Querétaro</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Corregidora, Querétaro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/educativo-campus-queretaro-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_campus_queretaro_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_campus_queretaro_path(locale: I18n.locale.to_s%}">Colegio
+                                México Nuevo Campus Querétaro</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Santiago de Querétaro, Querétaro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/oficinas-garza-sada-02.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_garza_sada_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_garza_sada_path(locale: I18n.locale.to_s%}">Corporativo
+                                Garza Sada</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Aguascalientes, Aguascalientes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/oficinas-sky-cumbres-03.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_sky_cumbres_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_sky_cumbres_path(locale: I18n.locale.to_s%}">Sky
+                                Cumbres</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Cancún, Quintana Roo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/oficinas-bosque-real-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_bosque_real_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_bosque_real_path(locale: I18n.locale.to_s%}">Corporativo
+                                Bosque Real</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Huixquilucan, Estado de México</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/oficinas-bosque-lomas-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_bosque_lomas_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_bosque_lomas_path(locale: I18n.locale.to_s%}">Corporativo
+                                Bosques de las Lomas</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> CDMX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/oficinas-periferico-sur-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_periferico_sur_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_periferico_sur_path(locale: I18n.locale.to_s%}">Corporativo
+                                Periférico Sur</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>CDMX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/oficinas-periferico-norte-01.png' %}"
+                                 alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_periferico_norte_path(locale: I18n.locale.to_s%}"
+                               role="button">Ver Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_periferico_norte_path(locale: I18n.locale.to_s%}">Corporativo
+                                Periférico Norte</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Estado de México</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="at-property-item at-col-default-mar animated fadeInUpShort slow delay-500">
+                        <div class="at-property-img">
+                            <img src="{% static 'images/fibrahd/propiedades/fhd-plaza-la-cantera-01.png' %}" alt="">
+                            <div class="at-property-overlayer"></div>
+                            <a class="btn btn-default at-property-btn"
+                               href="<%= proyectos_fhd_la_cantera_path(locale: I18n.locale.to_s%}" role="button">Ver
+                                Detalles</a>
+                        </div>
+                        <div class="at-property-location">
+                            <h4><i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="<%= proyectos_fhd_la_cantera_path(locale: I18n.locale.to_s%}">Plaza La
+                                Cantera</a></h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Tepic, Nayarit</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

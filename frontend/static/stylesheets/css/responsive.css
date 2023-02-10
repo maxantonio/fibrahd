@@ -58,7 +58,7 @@
 
 @media (min-width: 992px) {
     #primary-menu, #header.transparent-header.full-header #primary-menu > ul, #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap, #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
-        height: 80px;
+        height: 120px;
     }
 
     #primary-menu ul.sf-js-enabled > li {
@@ -332,7 +332,7 @@
     #header.sticky-style-3,
     #header.sticky-style-2 #header-wrap,
     #header.sticky-style-3 #header-wrap {
-       min-height: 55px !important;
+        min-height: 55px !important;
     }
 
     /* line 205, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */

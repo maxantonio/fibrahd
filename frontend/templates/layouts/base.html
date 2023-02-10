@@ -8,7 +8,7 @@
     <title>Elementia Materiales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="shortcut icon" type="img/x-icon" href="{% static 'images/utils/favicon.ico' %}">
+    <link rel="shortcut icon" type="img/x-icon" href="{% static 'images/fibrahd/favicon_fibrahd.png' %}">
     <style>
         .preloader,
         .preloader2,
@@ -70,27 +70,29 @@
         .tp-caption {
             white-space: nowrap;
         }
-        .search-container{
+
+        .search-container {
             position: absolute;
             right: 30px;
             top: 10px;
             box-shadow: 2em 0 0 black;
             width: 100%;
         }
-          .search-box {
-              right: 7%;
-          //right: 0;
-              height: 40px;
-              position: absolute;
-              top: 0;
-              padding-left: 2em;
-          //-webkit-transform: translateX(20%);
-          //transform: translateX(20%);
-              opacity: 0;
-          //transition: all 0.4s 0.3s;
-              background-color: #222;
-              color: white;
-          }
+
+        .search-box {
+            right: 7%;
+        / / right: 0;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            padding-left: 2em;
+        / / -webkit-transform: translateX(20 %);
+        / / transform: translateX(20 %);
+            opacity: 0;
+        / / transition: all 0.4 s 0.3 s;
+            background-color: #222;
+            color: white;
+        }
 
         .search-box .search-input {
             border: 0;
@@ -98,7 +100,7 @@
             height: 100%;
             background-color: transparent;
             caret-color: white;
-            color:white;
+            color: white;
         }
 
         .search-box input::placeholder { /* Chrome, Firefox, Opera, Safari 1*/
@@ -136,9 +138,11 @@
         .search-container {
             display: none;
         }
+
         .search-container.show {
             display: inline-block;
         }
+
         #buscar .search-toggle i.fa-times {
             display: none !important;
         }
@@ -161,7 +165,11 @@
     <script async src=https://www.googletagmanager.com/gtag/js?id=G-9D4H2RX3TB></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-9D4H2RX3TB');
