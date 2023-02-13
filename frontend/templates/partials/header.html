@@ -1,23 +1,35 @@
 {% load static %}
+{% load change_languaje %}
 
 
 <header id="header" class="transparent-header sticky-header">
     <div id="header-wrap" class="not-dark">
-        <div class="d-flex bg-dark sticky-header pt-2 pb-2">
-            <div class="container">
-                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+        <div class="d-flex bg-black sticky-header pt-2 pb-2">
+            <div class="container d-flex justify-content-between">
+                <div><a href="{% url 'sala-prensa' %}" style="color: #256D6D">Sala de prensa</a></div>
+                <div>
+                    <a class="{% if request.LANGUAGE_CODE == 'es' %}active{% endif %}" style="color: #256D6D"
+                       href="{% change_lang 'es' %}">ES </a>|
+                    <a class="{% if request.LANGUAGE_CODE == 'en' %}active{% endif %}" style="color: #256D6D"
+                       href="{% change_lang 'en' %}">EN</a>
+                </div>
             </div>
         </div>
         <div class="container clearfix">
             <div id="primary-menu-trigger"><i role="presentation" class="icon-reorder"></i></div>
             <div id="logo">
-                <h1>
-                    <a href="{% url 'index' %}" class="" data-dark-logo="{% static 'images/fibrahd/logo_fibrahd.png' %}"
+                <div class="d-flex align-items-center">
+                    <a href="{% url 'index' %}" class="mr-4"
                        title="Elementia Index Page">
-                        <img src="{% static 'images/fibrahd/logo_fibrahd.png' %}"
+                        <img class="img1" src="{% static 'images/fibrahd/logo_fibrahd.png' %}"
                              alt="Canvas Logo"
                              style="margin-top: 0px; padding-bottom: 0px;"></a>
-                </h1>
+                    <a href="{% url 'index' %}" class=""
+                       title="Elementia Index Page">
+                        <img class="img2" src="{% static 'images/fibrahd/logo_fibraplus.png' %}"
+                             alt="Canvas Logo"
+                             style="margin-top: 0px; padding-bottom: 0px;"></a>
+                </div>
                 {#                <a href="{% url 'index' %}" class="retina-logo" data-dark-logo="{% static 'images/utils/logo_elementia.svg' %}" style="margin-top: 5px; padding-bottom: 10px;" >#}
                 {#                    <img src="{% static 'images/utils/logo_elementia_white.png' %} " alt="Canvas Logo"></a>#}
             </div><!-- #logo end -->

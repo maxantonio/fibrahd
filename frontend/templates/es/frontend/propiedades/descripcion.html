@@ -1,0 +1,80 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+
+{% block otherstyles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/owl.carousel.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/owl.theme.default.min.css' %}"/>
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap pt-5 pb-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>{{ propiedad.descripcion }}</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="at-property-details-col">
+                        <div id="myCarousel" class="owl-carousel owl-theme" data-ride="carousel">
+                            {% for imagen in propiedad.imagenes %}
+                                <div class="item {% if forloop.first %}active{% endif %}">
+                                    <img src="{% static imagen %}" alt="">
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <ul class="nav nav-pills nav-justified">
+                            {% for imagen in propiedad.imagenes %}
+                                <li data-target="#myCarousel" data-slide-to="{{ forloop.counter0 }}"
+                                    class="nav-item {% if forloop.first %}active{% endif %}">
+                                    <a href="#"><img src="{% static imagen %}" alt=""> </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 at-property-details-col">
+                    <div class="at-sidebar at-col-default-mar">
+                        <div class="row at-property-features">
+                            <div class="col-md-12 clearfix">
+                                <ul>
+                                    <li>ABR m<sup>2</sup>: <span class="pull-right">{{ propiedad.abr }}</span>
+                                    </li>
+                                    <li>% de ABR de la cartera total: <span
+                                            class="pull-right">{{ propiedad.pabr }}%</span>
+                                    </li>
+                                    <!-- <li>Tasa de ocupación: <span class="pull-right">XX.X%</span>
+                                    </li> -->
+                                    <li>Fecha de adquisición: <span class="pull-right">{{ propiedad.fecha }}</span>
+                                    </li>
+                                    <!--<li>Inversión: <span class="pull-right">USD$ 27.8 mills.</span>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    <script>
+        $('#myCarousel').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: false,
+        });
+
+        $('.nav-pills').on('click', 'a', function (event) {
+            event.preventDefault();
+            $('.nav-item').removeClass('active');
+            $(this).parent().addClass('active');
+            var id = $(this).parent().attr('data-slide-to');
+            $('#myCarousel').trigger('to.owl.carousel', [id, 500, true]);
+        });
+    </script>
+{% endblock %}

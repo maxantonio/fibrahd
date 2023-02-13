@@ -11,6 +11,7 @@ urlpatterns = [
     path('equipo-directivo', views.equipo_directivo, name='equipo-directivo'),
 
     path('propiedades', views.propiedades, name='propiedades'),
+    path('propiedades/<id>', views.descripcion, name='descripcion'),
     path('inversionistas', views.inversionistas, name='inversionistas'),
 
     path('resultados-trimestrales', views.resultados_trimestrales, name='resultados-trimestrales'),
