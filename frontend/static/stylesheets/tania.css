@@ -1176,7 +1176,7 @@ p {
 }
 
 #page-title {
-    padding: 480px 0 265px !important;
+    padding: 270px 0 265px !important;
     background-size: cover;
     background-position: initial !important;
 }
@@ -1981,3 +1981,52 @@ blockquote {
     background: #3CA2A2;
     border: 1px #3CA2A2;
 }
+
+#primary-menu ul li:hover > a {
+    color: #3CA2A2;
+}
+
+#primary-menu ul ul li.current > a {
+    color: #3CA2A2;
+}
+
+#site-footer a:hover {
+    color: #3CA2A2 !important;
+}
+
+#site-footer h6 {
+    position: relative;
+}
+
+#site-footer h6:after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+}
+
+.inversionistas h3 {
+    position: relative;
+}
+
+.inversionistas h3:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #256D6D;
+    left: 0;
+    bottom: -5px;
+}
+
+.inversionistas .list-group-item:hover {
+    background-color: #256D6D;
+}
+
+.inversionistas .list-group-item:hover a {
+    color: white;
+}
+
