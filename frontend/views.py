@@ -29,7 +29,7 @@ def index(request):
 def perfil(request):
     context = {
         'title': _("Perfil"),
-        'imagen': staticfiles_storage.url('images/fibrahd/headers/header_perfil.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header_perfil.jpg'),
         'page': 'perfil',
         'section': _('Nosotros')
     }
