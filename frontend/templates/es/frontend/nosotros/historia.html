@@ -2,19 +2,184 @@
 {% load static %}
 
 {% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/timeline.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/trayectoria.css' %}"/>
 {% endblock %}
 
 {% block wrapper %}
     <div class="content-wrap pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    {{ title }}
+        <section id="ihistoria" class="bg-white mt-5">
+            <div class="container-time">
+                <div class="timeline">
+                    <div class="swiper-container">
+                        <h2 id="trayectoria" class="text-center text-white" style="position: absolute;">Nuestra
+                            trayectoria</h2>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2014.png' %})"
+                                 data-year="2014">
+                                <div class="historia-titulo">
+                                </div>
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Eternit Colombiana</span>#}
+                                    <h3 class="text-white">Fibra HD se constituye un 17 de diciembre.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2015.png' %})"
+                                 data-year="2015">
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Duralit</span>#}
+                                    <h3 class="text-white">El 10 de junio de 2015 se lleva a cabo la Oferta Pública
+                                        Inicial por parte del Fideicomiso, con un total de 150,750,000 CBFIs.</h3>
+                                    <h3 class="text-white">Fibra HD obtiene un crédito por Ps.200 millones para
+                                        capital de trabajo y adquisiciones.</h3>
+                                    <h3 class="text-white">Fibra HD concluye la adquisición de su portafolio
+                                        inicial.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Plaza Cataviña, en Mexicali, Baja
+                                        California Norte.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Colegio Piaget, en Los Mochis,
+                                        Sinaloa.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Celtic International School de
+                                        México, en Corregidora, Querétaro.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Plaza Casa Grande, en Saltillo,
+                                        Coahuila.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Plaza La Roca, en Cancún, Quintana
+                                        Roo.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2016.png' %})"
+                                 data-year="2016">
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Mexalit, Eureka </span>#}
+                                    <h3 class="text-white">Adquisición de inmueble Plaza Punto Los Mochis, en Los
+                                        Mochis, Sinaloa.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Colegio México Nuevo Campus La
+                                        Calma, en Zapopan, Jalisco.</h3>
+                                    <h3 class="text-white">Adquisición de una nave industrial ubicada en
+                                        Aguascalientes, Aguascalientes.</h3>
+                                    <h3 class="text-white">Adquisición de una nave industrial ubicada en Nogales,
+                                        Sonora.</h3>
+                                    <h3 class="text-white">Adquisición de un edificio de oficinas ubicado en
+                                        Aguascalientes, Aguascalientes.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Plaza Los Corales en Veracruz,
+                                        Veracruz.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Plaza Sky Cumbres, en Cancún,
+                                        Quintana Roo.</h3>
+                                    <h3 class="text-white">Adquisición de una nave industrial en Manzanillo,
+                                        Colima.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2017.png' %})"
+                                 data-year="2017">
+                                <div class="swiper-slide-content">
+                                    <span class="timeline-year">Incorporación de Plycem </span>
+                                    <h3 class="text-white">Fibra HD emitió una oferta por Ps.1,200 millones en
+                                        CEBURES.</h3>
+                                    <h3 class="text-white">Adquisición del Portafolio Burger King en Sonora, Sinaloa y
+                                        Baja California.</h3>
+                                    <h3 class="text-white">Adquisición del inmueble Instituto Profesional en Terapias
+                                        y Humanidades (IPETH) Puebla.</h3>
+                                    <h3 class="text-white">Adquisición de inmueble Plaza San Antonio ubicada en la
+                                        Ciudad de México.</h3>
+                                    <h3 class="text-white">Adquisición del inmueble centro comercial denominado Plaza
+                                        La Cantera ubicado en Tepic, Nayarit.</h3>
+                                    <h3 class="text-white">Adquisición del inmueble Campus Técnico Querétaro ubicado
+                                        en Querétaro, Querétaro.</h3>
+                                    <h3 class="text-white">Adquisición del edificio de oficinas Bosque Real ubicado en
+                                        el Estado de México.</h3>
+                                    <h3 class="text-white">Adquisición del inmueble de Barrio Reforma.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2018.png' %})"
+                                 data-year="2018">
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Frigocel</span>#}
+                                    <h3 class="text-white">Fibra HD emitió una oferta de hasta Ps.700 millones en
+                                        CEBURES.</h3>
+                                    <h3 class="text-white">FIBRAHD anuncia la Contratación del despacho Galáz,
+                                        Yamazaki, Ruíz Urquiza, S.C. como Auditor Externo.</h3>
+                                    <h3 class="text-white">Adquisición de las naves industriales Industrial
+                                        Villahermosa e Industrial Durango.</h3>
+                                    <h3 class="text-white">Adquisición de portafolio de inmuebles HD17.</h3>
+                                    <h3 class="text-white">Adquisición de portafolio de inmuebles HD18.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2019.png' %})"
+                                 data-year="2019">
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Fibraforte </span>#}
+                                    <h3 class="text-white">Fibra HD anuncia Contratación de Auditor Externo Servicios
+                                        Adicionales.</h3>
+                                    <h3 class="text-white">Adquisición de una fracción del inmueble que ocupa el
+                                        Colegio México Nuevo Campus Querétaro, ubicado en Santiago de Querétaro,
+                                        Querétaro.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2020.png' %})"
+                                 data-year="2020">
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Nacobre</span>#}
+                                    <h3 class="text-white">FIBRAHD anuncia que celebró un Contrato de Apertura de
+                                        Crédito en Cuenta Corriente.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"
+                                 style="background-image: url({% static 'images/fibrahd/historia/2021.png' %})"
+                                 data-year="2021">
+                                <div class="swiper-slide-content">
+                                    {#                                    <span class="timeline-year">Incorporación de Allura</span>#}
+                                    <h3 class="text-white">FIBRA HD anuncia disposición del Contrato de Apertura de
+                                        Crédito en Cuenta Corriente.</h3>
+                                    <h3 class="text-white">FIBRA HD anuncia intención de FIBRA PLUS de adquirir hasta
+                                        el 100% de los CBFIs de FIBRA HD.</h3>
+                                    <h3 class="text-white">FIBRA HD publica su primer Informe Anual ASG 2020.</h3>
+                                    <h3 class="text-white">FIBRA PLUS, inicia oferta pública de adquisición por hasta
+                                        el 100% de los CBFIs en circulación de FIBRA HD.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 {% endblock %}
 
 {% block otherscripts %}
+    <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'javascripts/swiper.min.js' %}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var timelineSwiper = new Swiper('.timeline .swiper-container', {
+                direction: 'vertical',
+                loop: false,
+                speed: 1600,
+                pagination: '.swiper-pagination',
+                paginationBulletRender: function (swiper, index, className) {
+                    var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+                    return '<span class="' + className + '">' + year + '</span>';
+                },
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    768: {
+                        direction: 'horizontal',
+                    }
+                }
+            });
+        });
+    </script>
 {% endblock %}

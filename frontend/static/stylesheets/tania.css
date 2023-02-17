@@ -1,26 +1,18 @@
-:root {
-    --font-family-elementia: 'Raleway', sans-serif;
-}
-
 @font-face {
-    font-family: 'RadioGrotesk-Regular';
-    src: url('fonts/RadioGrotesk-Regular.otf') format('opentype');
+    font-family: 'Roboto-Regular';
+    src: url('fonts/Roboto-Regular.ttf') format('opentype');
     font-style: normal;
 }
 
-/* line 1, D:/begrand/app/assets/stylesheets/tania.css.scss */
 @font-face {
-    font-family: 'Flama-Bold';
-    src: url('fonts/Flama-Bold.woff') format('woff');
+    font-family: 'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.ttf') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Flama-Book';
-    src: url('fonts/Flama Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+:root {
+    --font-family-elementia: 'Roboto-Regular';
 }
 
 .feature-box.fbox-plain.fbox-small .fbox-icon i {
@@ -1956,7 +1948,7 @@ blockquote {
     padding-left: 1.625em;
     padding-right: 1.625em;
     height: 53px;
-    font-family: RobotoRegular;
+    font-family: var(--font-family-elementia);
     -webkit-appearance: none;
     background: #fff;
     border: 0;
@@ -2028,5 +2020,13 @@ blockquote {
 
 .inversionistas .list-group-item:hover a {
     color: white;
+}
+
+.tc-fibrahd-light {
+    color: #3CA2A2 !important;
+}
+
+.tc-fibrahd-dark {
+    color: #256D6D !important;
 }
 

@@ -40,7 +40,7 @@ def perfil(request):
 def historia(request):
     context = {
         'title': _("Historia"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-estrategia.jpg'),
         'page': 'historia',
         'section': _('Nosotros')
     }
@@ -51,7 +51,7 @@ def historia(request):
 def estrategia(request):
     context = {
         'title': _("Estrategia"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-estrategia.jpg'),
         'page': 'estrategia',
         'section': _('Nosotros')
     }
@@ -62,7 +62,7 @@ def estrategia(request):
 def equipo_directivo(request):
     context = {
         'title': _("Equipo directivo"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-equipodirectivo.jpg'),
         'page': 'equipo-directivo',
         'section': _('Nosotros')
     }
@@ -74,7 +74,7 @@ def equipo_directivo(request):
 def propiedades(request):
     context = {
         'title': _("Propiedades"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-propiedades.jpg'),
         'page': 'propiedades',
         'section': _('Propiedades')
     }
@@ -631,7 +631,7 @@ def inversionistas(request):
 def resultados_trimestrales(request):
     context = {
         'title': _("Resultados trimestrales"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'resultados-trimestrales',
         'section': _('Inversionistas')
     }
@@ -643,7 +643,7 @@ def resultados_trimestrales(request):
 def resultados_anuales(request):
     context = {
         'title': _("Resultados anuales"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'resultados-anuales',
         'section': _('Inversionistas')
     }
@@ -654,7 +654,7 @@ def resultados_anuales(request):
 def preguntas_frecuentes(request):
     context = {
         'title': _("Preguntas frecuentes"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'preguntas-frecuentes',
         'section': _('Inversionistas')
     }
@@ -665,7 +665,7 @@ def preguntas_frecuentes(request):
 def glosario(request):
     context = {
         'title': _("Glosario"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'glosario',
         'section': _('Inversionistas')
     }
@@ -673,22 +673,10 @@ def glosario(request):
 
 
 @gzip_page
-def glosario(request):
-    context = {
-        'title': _("Glosario"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
-        'page': 'glosario',
-        'section': _('Inversionistas')
-    }
-    return render(request, '{0}/frontend/financiera/glosario.html'.format(request.LANGUAGE_CODE),
-                  context)
-
-
-@gzip_page
 def sala_prensa(request):
     context = {
         'title': _("Sala de prensa"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'sala-prensa',
         'section': _('Inversionistas')
     }
@@ -699,7 +687,7 @@ def sala_prensa(request):
 def documentos_relevantes(request):
     context = {
         'title': _("Documentos relevantes"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'documentos-relevantes',
         'section': _('Inversionistas')
     }
@@ -711,7 +699,7 @@ def documentos_relevantes(request):
 def comite_tecnico(request):
     context = {
         'title': _("Comité técnico"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'comite-tecnico',
         'section': _('Inversionistas')
     }
@@ -722,7 +710,7 @@ def comite_tecnico(request):
 def otros_comites(request):
     context = {
         'title': _("Otros comités"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'otros-comites',
         'section': _('Inversionistas')
     }
@@ -733,7 +721,7 @@ def otros_comites(request):
 def principales_tenedores(request):
     context = {
         'title': _("Principales tenedores"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'principales-tenedores',
         'section': _('Inversionistas')
     }
@@ -744,7 +732,7 @@ def principales_tenedores(request):
 def estructura_corporativa(request):
     context = {
         'title': _("Estructura corporativa"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'principales-tenedores',
         'section': _('Inversionistas')
     }
@@ -755,7 +743,7 @@ def estructura_corporativa(request):
 def auditor_externo(request):
     context = {
         'title': _("Auditor externo"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'auditor-externo',
         'section': _('Inversionistas')
     }
@@ -767,7 +755,7 @@ def auditor_externo(request):
 def cotizacion(request):
     context = {
         'title': _("Cotización"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'cotizacion',
         'section': _('Inversionistas')
     }
@@ -778,7 +766,7 @@ def cotizacion(request):
 def distribuciones_efectivo(request):
     context = {
         'title': _("Distribuciones de efectivo"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'distribuciones-efectivo',
         'section': _('Inversionistas')
     }
@@ -789,7 +777,7 @@ def distribuciones_efectivo(request):
 def cobertura_analistas(request):
     context = {
         'title': _("Cobertura de analistas"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'cobertura-analistas',
         'section': _('Inversionistas')
     }
@@ -800,7 +788,7 @@ def cobertura_analistas(request):
 def deuda(request):
     context = {
         'title': _("Deuda"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'deuda',
         'section': _('Inversionistas')
     }
@@ -811,7 +799,7 @@ def deuda(request):
 def prospectos(request):
     context = {
         'title': _("Prospectos"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'prospectos',
         'section': _('Inversionistas')
     }
@@ -822,7 +810,7 @@ def prospectos(request):
 def sustentabilidad(request):
     context = {
         'title': _("Sustentabilidad"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-sustentabilidad.jpg'),
         'page': 'sustentabilidad',
         'section': _('Sustentabilidad')
     }
@@ -831,15 +819,10 @@ def sustentabilidad(request):
 
 @gzip_page
 def contacto(request):
-    if request.LANGUAGE_CODE == 'es':
-        imagen = staticfiles_storage.url('images/contacto-pic.png')
-    else:
-        imagen = staticfiles_storage.url('images/contact.png')
-
     context = {
         'title': _("Contacto"),
         'section': _('Contacto'),
-        'imagen': imagen,
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-contacto.jpg'),
     }
     return render(request, '{0}/frontend/contacto.html'.format(request.LANGUAGE_CODE), context)
 
