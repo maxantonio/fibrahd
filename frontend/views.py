@@ -74,7 +74,7 @@ def equipo_directivo(request):
 def propiedades(request):
     context = {
         'title': _("Propiedades"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-propiedades.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-propiedades.jpg'),
         'page': 'propiedades',
         'section': _('Propiedades')
     }
@@ -619,7 +619,7 @@ def descripcion(request, id):
 def inversionistas(request):
     context = {
         'title': _("Inversionistas"),
-        'imagen': staticfiles_storage.url('images/header-preview2.png'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'inversionistas',
         'section': _('Inversionistas')
     }
@@ -721,7 +721,7 @@ def otros_comites(request):
 def principales_tenedores(request):
     context = {
         'title': _("Principales tenedores"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-gobierno-corporativo.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'principales-tenedores',
         'section': _('Inversionistas')
     }
@@ -732,7 +732,7 @@ def principales_tenedores(request):
 def estructura_corporativa(request):
     context = {
         'title': _("Estructura corporativa"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-gobierno-corporativo.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'principales-tenedores',
         'section': _('Inversionistas')
     }
@@ -743,7 +743,7 @@ def estructura_corporativa(request):
 def auditor_externo(request):
     context = {
         'title': _("Auditor externo"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-gobierno-corporativo.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-gobierno-corporativo.jpg'),
         'page': 'auditor-externo',
         'section': _('Inversionistas')
     }
@@ -755,7 +755,7 @@ def auditor_externo(request):
 def cotizacion(request):
     context = {
         'title': _("Cotización"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'cotizacion',
         'section': _('Inversionistas')
     }
@@ -766,7 +766,7 @@ def cotizacion(request):
 def distribuciones_efectivo(request):
     context = {
         'title': _("Distribuciones de efectivo"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'distribuciones-efectivo',
         'section': _('Inversionistas')
     }
@@ -777,7 +777,7 @@ def distribuciones_efectivo(request):
 def cobertura_analistas(request):
     context = {
         'title': _("Cobertura de analistas"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'cobertura-analistas',
         'section': _('Inversionistas')
     }
@@ -788,7 +788,7 @@ def cobertura_analistas(request):
 def deuda(request):
     context = {
         'title': _("Deuda"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'deuda',
         'section': _('Inversionistas')
     }
@@ -799,7 +799,7 @@ def deuda(request):
 def prospectos(request):
     context = {
         'title': _("Prospectos"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-informacion-bursatil.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'prospectos',
         'section': _('Inversionistas')
     }
@@ -810,7 +810,7 @@ def prospectos(request):
 def sustentabilidad(request):
     context = {
         'title': _("Sustentabilidad"),
-        'imagen': staticfiles_storage.url('images/images/fibrahd/headers/header-sustentabilidad.jpg'),
+        'imagen': staticfiles_storage.url('images/fibrahd/headers/header-sustentabilidad.jpg'),
         'page': 'sustentabilidad',
         'section': _('Sustentabilidad')
     }
@@ -848,15 +848,16 @@ def send_mail_contact(request):
             'phone': phone,
             'country': country,
             'state': state,
+            'theme': theme,
             'message': message
         }
     )
 
     send_mail(
-        'Usuario anónimo desea contactar con admin del sitio Elementia Materiales',
+        'Usuario anónimo desea contactar con admin del sitio Fibra HD',
         '',
         'it@investorcloud.net',
-        [theme, 'it@irstrat.com', 'jsaucedag@elementia.com'],  # ['info@murano.com.mx',],
+        ['it@irstrat.com', 'contacto@fibrahd.mx'],
         html_message=html_message
     )
     return JsonResponse({"success": "true"}, safe=False)

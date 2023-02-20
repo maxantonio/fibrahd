@@ -1206,20 +1206,20 @@ p {
 
 .btn-outline-info:hover {
     color: #fff;
-    background-color: #3eab49;
-    border-color: #3eab49;
+    background-color: #256D6D;
+    border-color: #256D6D;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #3eab49;
-    border-color: #3eab49;
+    background-color: #256D6D;
+    border-color: #256D6D;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #3eab49;
-    border-color: #3eab49;
+    background-color: #256D6D;
+    border-color: #256D6D;
 }
 
 .text-gray {
@@ -2030,3 +2030,7 @@ blockquote {
     color: #256D6D !important;
 }
 
+#ihistoria h3 {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+}

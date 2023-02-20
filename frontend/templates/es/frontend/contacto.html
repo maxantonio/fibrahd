@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block wrapper %}
-    <div class="content-wrap">
+    <div class="content-wrap pb-5 pt-5">
         <article id="contactForm">
             <fieldset class="fieldset m-auto " style="max-width: 600px">
                 <div class="">
@@ -76,7 +76,7 @@
                                                     <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             <input name="form_theme" type="radio"
-                                                                   value="napinag@gcarso.com.mx" checked>
+                                                                   value="Inversionistas" checked>
                                                         </div>
                                                     </div>
                                                     <input type="text" class="form-control bg-white"
@@ -89,7 +89,7 @@
                                                     <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             <input name="form_theme" type="radio"
-                                                                   value="rgonzalezv@elementia.com">
+                                                                   value="Sustentabilidad">
                                                         </div>
                                                     </div>
                                                     <input type="text" class="form-control bg-white"
@@ -97,13 +97,38 @@
                                                 </div>
                                             </div>
 
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio"
+                                                                   value="Vender">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white"
+                                                           value="Vender" disabled>
+                                                </div>
+                                            </div>
 
                                             <div class="col-md-6 col-sm-6 col-xs-12">
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             <input name="form_theme" type="radio"
-                                                                   value="comunicacioninterna@elementia.com">
+                                                                   value="Rentar">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white"
+                                                           value="Rentar" disabled>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio"
+                                                                   value="Otros">
                                                         </div>
                                                     </div>
                                                     <input type="text" class="form-control bg-white"
@@ -121,7 +146,7 @@
                                                   placeholder="*Comentario" rows="7"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-12 mb-4">
+                                <div class="col-md-12">
                                     <div class="form-group centered-movil mb-0">
                                         <input id="form_botcheck" name="form_botcheck"
                                                class="form-control" type="hidden" value="">
@@ -165,8 +190,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <p class="obligatorio">También puedes contactar directamente con la empresa que
-                                        desees:</p>
+                                    {#                                    <p class="obligatorio mb-0">También puedes contactar directamente con la empresa que#}
+                                    {#                                        desees:</p>#}
                                     <!--  <div class="mt-3 collapse show" id="collapseExample">
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 col-xs-12">
@@ -267,72 +292,72 @@
                 </div>
             </fieldset>
         </article>
-        <div class="col-12">
-            <div id="oc-clients"
-                 class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget"
-                 data-margin="" data-loop="true" data-nav="false" data-autoplay="2000" data-items="8"
-                 data-pagi="false" data-items-xs="1"
-                 data-items-sm="2" data-items-md="3" data-items-lg="5" data-items-xl="5">
-                <div class="oc-item">
-                    <a href="https://www.mexalit.com/contacto/ventas" aria-label="this opens in a new tab"
-                       target="_blank">
-                        <img src="{% static 'images/empresas/log1.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <!--    <div class="oc-item">
-                    <a href="">
-                        <img src="{% static 'images/empresas/log2.png' %}"
-                             alt="Clients"></a>
-                </div> -->
-                <div class="oc-item">
-                    <a href="https://www.frigocel.com.mx/web/frigocel-2021/contacto"
-                       aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log3.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://plycem.com/contacto/" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log4.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://www.nacobre.com.mx/contacto" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log5.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://allurausa.com/about/contact" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log6.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://www.eternit.com.ec/contacto" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log8.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://www.fibraforte.com/#contacto" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log7.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://www.eternit.com.co/contacto" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log8.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://duralit.com/contacto/" aria-label="this opens in a new tab" target="_blank">
-                        <img src="{% static 'images/empresas/log9.png' %}"
-                             alt="Clients"></a>
-                </div>
-                <div class="oc-item">
-                    <a href="https://www.grupoeureka.com.mx/contacto" aria-label="this opens in a new tab"
-                       target="_blank">
-                        <img src="{% static 'images/empresas/log10.png' %}"
-                             alt="Clients"></a>
-                </div>
-            </div>
-        </div>
+        {#        <div class="col-12">#}
+        {#            <div id="oc-clients"#}
+        {#                 class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget"#}
+        {#                 data-margin="" data-loop="true" data-nav="false" data-autoplay="2000" data-items="8"#}
+        {#                 data-pagi="false" data-items-xs="1"#}
+        {#                 data-items-sm="2" data-items-md="3" data-items-lg="5" data-items-xl="5">#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.mexalit.com/contacto/ventas" aria-label="this opens in a new tab"#}
+        {#                       target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log1.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <!--    <div class="oc-item">#}
+        {#                    <a href="">#}
+        {#                        <img src="{% static 'images/empresas/log2.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div> -->#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.frigocel.com.mx/web/frigocel-2021/contacto"#}
+        {#                       aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log3.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://plycem.com/contacto/" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log4.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.nacobre.com.mx/contacto" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log5.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://allurausa.com/about/contact" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log6.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.eternit.com.ec/contacto" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log8.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.fibraforte.com/#contacto" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log7.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.eternit.com.co/contacto" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log8.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://duralit.com/contacto/" aria-label="this opens in a new tab" target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log9.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#                <div class="oc-item">#}
+        {#                    <a href="https://www.grupoeureka.com.mx/contacto" aria-label="this opens in a new tab"#}
+        {#                       target="_blank">#}
+        {#                        <img src="{% static 'images/empresas/log10.png' %}"#}
+        {#                             alt="Clients"></a>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
     </div>
 
     <div class="modal fade popup" id="popup1" tabindex="-1" role="dialog" aria-hidden="true">

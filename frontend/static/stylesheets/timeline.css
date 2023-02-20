@@ -153,13 +153,13 @@
     width: 6px;
     height: 6px;
     border-radius: 100%;
-    background-color: #EB8707;
+    background-color: #3CA2A2;
     transform: scale(0);
     transition: .2s;
 }
 
 .timeline .swiper-pagination-bullet-active {
-    color: #EB8707;
+    color: #3CA2A2;
 }
 
 .timeline .swiper-pagination-bullet-active::before {
