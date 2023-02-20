@@ -2034,3 +2034,31 @@ blockquote {
     font-size: 18px !important;
     margin-bottom: 5px !important;
 }
+
+.div-content {
+    background-color: #3CA2A2;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.div-content a {
+    padding: 5px;
+    color: #ffffff;
+}
+
+.div-content a:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 25px;
+}
+
+.div-content a:hover {
+    background-color: #256D6D;
+    color: white;
+}
+
+.separator {
+    border-bottom: 1px solid white;
+}
