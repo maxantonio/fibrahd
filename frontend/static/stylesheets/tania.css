@@ -2062,3 +2062,76 @@ blockquote {
 .separator {
     border-bottom: 1px solid white;
 }
+
+.glossario {
+    background-color: #3CA2A2;
+    height: 49px;
+}
+
+.gloss-letra {
+    background-color: #256D6D;
+    color: #f9f9f9;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 8px;
+    float: left;
+    font-weight: bold;
+    border: 0px solid #000000;
+    -moz-border-radius: 90px; /*Firefox*/
+    -webkit-border-radius: 90px; /*Safari, Chrome*/
+    border-radius: 90px;
+}
+
+.gloss-letra a {
+    color: #f9f9f9 !important;
+
+}
+
+.letra-tira td {
+    padding: 0 !important;
+}
+
+.table.analistas thead th {
+    border-bottom: unset;
+}
+
+.table.analistas td, .table.analistas th {
+    border-top: unset;
+}
+
+table.analistas thead th {
+    background-color: #256D6D;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.table.analistas {
+    border-collapse: separate;
+}
+
+.panel-group.accordion-style-03 .panel {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 22px !important;
+    border-radius: 5px;
+    border: 1px solid #023D3D;
+}
+
+.panel-group.accordion-style-03 .panel .panel-heading {
+    position: relative;
+}
+
+.panel-group.accordion-style-03 .panel a {
+    padding: 18px 25px 18px 0;
+    display: block;
+}
+
+.accordion-style-03 .panel .panel-heading i {
+    position: absolute;
+    top: 33%;
+    right: 0;
+    font-size: 19px;
+    font-weight: 900;
+    color: #023D3D;
+}
