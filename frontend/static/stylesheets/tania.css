@@ -882,7 +882,6 @@ a.btn-infoe:hover {
 }
 
 .page_footer.s-parallax {
-/ / background-image: url("../images/parallax/parallax-bg.jpg");
 }
 
 @media (min-width: 576px) {
@@ -992,7 +991,6 @@ a.btn-infoe:hover {
 
 .page_copyright.cover-background,
 .page_copyright.s-parallax {
-/ / background-image: url("../images/parallax/parallax-bg.jpg");
 }
 
 .links ul,

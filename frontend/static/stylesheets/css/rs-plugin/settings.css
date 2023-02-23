@@ -1423,7 +1423,6 @@ img.tp-slider-alternative-image {
 
 /* line 14, D:/begrand/app/assets/stylesheets/css/rs-plugin/settings.css.scss */
 .tp-loader.spinner0, .tp-loader.spinner5 {
-  background-image: url(../../../images/loader.gif);
   background-repeat: no-repeat;
 }
 
