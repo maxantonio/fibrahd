@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/dataTables.bootstrap4.min.css' %}"/>
 {% endblock %}
 
 {% block wrapper %}
@@ -9,7 +10,57 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    {{ title }}
+                    <table class="table analistas table-striped mt-4 relev">
+                        <thead>
+                        <tr>
+                            <th><strong>Fecha</strong></th>
+                            <th><strong>Titular</strong></th>
+                            <th><strong>Documento</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>26-06-2015</td>
+                            <td>Conclusión del periodo de estabilización de los Certificados Bursátiles Fiduciarios
+                                Inmobiliarios con clave de pizarra FIBRAHD
+                                15
+                            </td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-06-26-Evento-relevante.pdf"
+                                   target="_blank">Evento relevante </a></td>
+                        </tr>
+                        <tr>
+                            <td>19-08-2015</td>
+                            <td>Movimientos Inusitados en la negociación de valores representativos del patrimonio del
+                                Fideicomiso irrevocable identificado con el número F/1523, Serie “FIBRA HD 15”.
+                            </td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-06-26-Evento-relevante.pdf"
+                                   target="_blank">Evento relevante </a></td>
+                        </tr>
+                        <tr>
+                            <td>21-08-2015</td>
+                            <td>Canje de Título</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-08-21-Evento-relevante.pdf"
+                                   target="_blank">Evento relevante </a></td>
+                        </tr>
+                        <tr>
+                            <td>21-10-2015</td>
+                            <td>FIBRAHD contrata una línea de crédito por $200 millones de pesos</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-10-21-Evento-relevante.pdf"
+                                   target="_blank">Evento relevante </a></td>
+                        </tr>
+                        <tr>
+                            <td>22-12-2015</td>
+                            <td>FIBRAHD contrata crédito simple por $200 millones de pesos</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-12-22-Evento-relevante.pdf"
+                                   target="_blank">Evento relevante </a></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -17,4 +68,34 @@
 {% endblock %}
 
 {% block otherscripts %}
+    <script src="{% static 'javascripts/bootstrap-datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'javascripts/bootstrap-datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+    <script>
+        $(function () {
+            var relev = $('.relev').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar en bloques de  _MENU_  registros",
+                    "zeroRecords": "No se he encontrado",
+                    "info": "Mostrando desde _START_ hasta _END_ de _TOTAL_ registros",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(filtrado de _MAX_ registros en total)",
+                    "sSearch": "Buscar:",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sPrevious": "Anterior",
+                        "sNext": "Siguiente",
+                        "sLast": "Último"
+                    }
+                },
+                "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                "bSort": true,
+                "order": [[0, 'desc']],
+                "dom": "<'row'<'col-lg-4 mb-0 d-flex justify-content-start'f><'col-lg-8 d-flex justify-content-end align-items-center'<'#year.mb-2 mr-5 d-flex align-items-center'>l>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+            });
+
+        });
+    </script>
 {% endblock %}

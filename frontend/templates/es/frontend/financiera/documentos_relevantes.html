@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/dataTables.bootstrap4.min.css' %}"/>
 {% endblock %}
 
 {% block wrapper %}
@@ -9,7 +10,116 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    {{ title }}
+                    <table class="table analistas table-striped mt-4 relev">
+                        <thead>
+                        <tr>
+                            <th><strong>Documento</strong></th>
+                            <th><strong>Archivo</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Contrato de Fideicomiso</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Contrato-Fideicomiso.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aviso de Oferta Pública</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Aviso-Oferta-Publica.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Prospecto de Colocación</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Prospecto-colocacion.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 class="mt-5 tc-fibrahd-dark">Reportes sobre el impacto de transacciones equiparables a
+                        reorganizaciones corporativas</h3>
+
+                    <table class="table analistas table-striped mt-4 relev">
+                        <thead>
+                        <tr>
+                            <th><strong>Documento</strong></th>
+                            <th><strong>Archivo</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Folleto Informativo Relativo a la adquisición De La Escuela Y Clínica IPETH, Puebla,
+                                Puebla
+                            </td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Ipeth.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Folleto informativo relativo a la eventual adquisición del portafolio HD17</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Hd17.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de la Nave Industrial Agricolima, Manzanillo, Col.</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Agricolima.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de Plaza Los Corales, Veracruz, Ver.</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Loscorales.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de Sky Cumbres, Cancún, Q.Roo</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Sky.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de Corporativo Aguascalientes, Ags</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Aguascalientes.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de la Nave Industrial Aguascalientes, Ags</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Industrial-Aguascalientes.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de la Nave Industrial Veritiv, Nogales</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Veritiv.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición del Colegio México Nuevo La Calma</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Lacalma.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte sobre la adquisición de Plaza Punto Los Mochis</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Mochis.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reporte Sobre la Adquisición de Plaza La Roca</td>
+                            <td>
+                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/Folleto-Laroca.pdf"
+                                   target="_blank">PDF</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -17,4 +127,34 @@
 {% endblock %}
 
 {% block otherscripts %}
+    <script src="{% static 'javascripts/bootstrap-datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'javascripts/bootstrap-datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+    <script>
+        $(function () {
+            var relev = $('.relev').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar en bloques de  _MENU_  registros",
+                    "zeroRecords": "No se he encontrado",
+                    "info": "Mostrando desde _START_ hasta _END_ de _TOTAL_ registros",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(filtrado de _MAX_ registros en total)",
+                    "sSearch": "Buscar:",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sPrevious": "Anterior",
+                        "sNext": "Siguiente",
+                        "sLast": "Último"
+                    }
+                },
+                "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                "bSort": true,
+                "order": [[0, 'desc']],
+                "dom": "<'row'<'col-lg-4 mb-0 d-flex justify-content-start'f><'col-lg-8 d-flex justify-content-end align-items-center'<'#year.mb-2 mr-5 d-flex align-items-center'>l>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+            });
+
+        });
+    </script>
 {% endblock %}
