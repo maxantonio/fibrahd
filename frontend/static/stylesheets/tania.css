@@ -2133,3 +2133,7 @@ table.analistas thead th {
     font-weight: 900;
     color: #023D3D;
 }
+
+table.cobertura.analistas td {
+    vertical-align: middle;
+}

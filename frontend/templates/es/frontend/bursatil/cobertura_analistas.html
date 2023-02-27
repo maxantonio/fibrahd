@@ -9,7 +9,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    {{ title }}
+                    <table class="table cobertura analistas table-striped mt-4">
+                        <thead>
+                        <tr>
+                            <th><strong>Institución</strong></th>
+                            <th><strong>Analista</strong></th>
+                            <th><strong>Contacto</strong></th>
+                            <th><strong>Inicio de cobertura</strong></th>
+                            <th><strong>Recomendación</strong></th>
+                            <th><strong>Precio objetivo</strong></th>
+                            <th><strong>Último reporte</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><img width="150" src="{% static 'images/fibrahd/apalache.png' %}" alt=""></td>
+                            <td>Jorge Plácido</td>
+                            <td>jorge.placido@apalache.mx</td>
+                            <td>xxxxx</td>
+                            <td>COMPRA</td>
+                            <td>xx.xx</td>
+                            <td class="text-center">
+                                <a target="_blank"
+                                   href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/DocumentosRelevantes/borrador.pdf"><i
+                                        class="fa fa-download"></i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

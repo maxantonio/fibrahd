@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/dataTables.bootstrap4.min.css' %}"/>
 {% endblock %}
 
 {% block wrapper %}
@@ -9,7 +10,56 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    {{ title }}
+                    <p>Somos contribuyentes bajo el régimen fiscal aplicable a una FIBRA, de conformidad con los
+                        artículos 187 y 188 de la LISR. La LISR, requiere que una FIBRA distribuya por lo menos una vez
+                        al año, a más tardar el 15 (quince) de marzo, al menos el 95% del Resultado Fiscal del ejercicio
+                        inmediato anterior. Nuestro Resultado Fiscal se calcula conforme a lo dispuesto en el artículo
+                        13 de la Ley del Impuesto Sobre la Renta, considerando los ingresos acumulables obtenidos
+                        durante el ejercicio fiscal y restando las deducciones autorizadas; a la utilidad así obtenida
+                        se le debe restar la pérdida de ejercicios fiscales previos pendientes de ser amortizadas. Las
+                        entregas de las Distribuciones de Efectivo se realizarán a prorrata entre todos los Tenedores en
+                        proporción a la tenencia de los CBFIs de cada Tenedor. </p>
+
+                    <p>Las Distribuciones de Efectivo se efectuarán siempre y cuando existan recursos líquidos en la
+                        Cuenta de Distribuciones y siempre y cuando se cumplan con los siguientes requisitos: </p>
+
+                    <ul>
+                        <li>(i) Que el Comité Técnico apruebe los estados financieros del Fideicomiso, con base en los
+                            cuales se pretenda efectuar la entrega de Distribuciones de Efectivo;
+                        </li>
+                        <li>(ii) Que el Comité Técnico apruebe el monto de la Distribución de Efectivo de conformidad
+                            con la fracción VI del artículo 187 de la LISR, previa opinión del Comité de Auditoría; y
+                        </li>
+                        <li>(iii) Que el Asesor y Administrador, con base en la resolución del Comité Técnico, realice
+                            la instrucción respectiva al Fiduciario para la entrega de Distribuciones de Efectivo a los
+                            Tenedores, con base en el monto total aprobado por el Comité Técnico y el número de CBFIs en
+                            circulación.
+                        </li>
+                    </ul>
+
+                    <p>Es importante señalar que al 30 de septiembre de 2022, no se ha realizado Distribución alguna a
+                        los Tenedores, toda vez que no se ha generado utilidad fiscal para realizar dichas
+                        Distribuciones debido en gran parte a los proyectos en desarrollo.</p>
+
+                    <table class="table analistas table-striped mt-4 relev">
+                        <thead>
+                        <tr>
+                            <th><strong>Fecha</strong></th>
+                            <th><strong>Titular</strong></th>
+                            <th><strong>Documento</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>28-07-2021</td>
+                            <td>Aviso de distribución de Junio</td>
+                            <td>
+                                <a href="#"
+                                   target="_blank">Aviso</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -17,4 +67,34 @@
 {% endblock %}
 
 {% block otherscripts %}
+    <script src="{% static 'javascripts/bootstrap-datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'javascripts/bootstrap-datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+    <script>
+        $(function () {
+            var relev = $('.relev').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar en bloques de  _MENU_  registros",
+                    "zeroRecords": "No se he encontrado",
+                    "info": "Mostrando desde _START_ hasta _END_ de _TOTAL_ registros",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(filtrado de _MAX_ registros en total)",
+                    "sSearch": "Buscar:",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sPrevious": "Anterior",
+                        "sNext": "Siguiente",
+                        "sLast": "Último"
+                    }
+                },
+                "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                "bSort": true,
+                "order": [[0, 'desc']],
+                "dom": "<'row'<'col-lg-4 mb-0 d-flex justify-content-start'f><'col-lg-8 d-flex justify-content-end align-items-center'<'#year.mb-2 mr-5 d-flex align-items-center'>l>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+            });
+
+        });
+    </script>
 {% endblock %}
