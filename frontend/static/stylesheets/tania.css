@@ -2137,3 +2137,11 @@ table.analistas thead th {
 table.cobertura.analistas td {
     vertical-align: middle;
 }
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.be-gray {
+    animation: background-fade 3s forwards;
+}
