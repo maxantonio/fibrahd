@@ -2145,3 +2145,30 @@ table.cobertura.analistas td {
 .be-gray {
     animation: background-fade 3s forwards;
 }
+
+.font-size-60 {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.figure img {
+    transition: all 1s;
+}
+
+.figure:hover img {
+    transform: scale(120%);
+}
+
+.figure:hover .texto {
+    background-color: #256D6D;
+    color: white !important;
+}
+
+.figure:hover h3 {
+    color: white !important;
+}
+
+.figure:hover a {
+    color: white !important;
+    border: 1px solid white;
+}

@@ -78,6 +78,72 @@
     {% include 'partials/slider_index.html' %}
     <section id="content">
         <div class="clearfix">
+            <div class="auto-container mb-5 pb-5">
+                <div class="parallax p-0 pt-5 pb-5"
+                     style="background-color: #3CA2A2;">
+                    <div class="container text-white">
+                        <div class="row d-flex align-items-center flex-wrap">
+                            <div class="col-md-4 mt-5 mb-5">
+                                <div class="pb-4 border-bottom border-white mb-4">
+                                    <h2 class="text-white font-size-60 mb-0">¿Quiénes <br>somos?</h2>
+                                </div>
+                                <a href="{% url 'perfil' %}" target="_blank" class="btn btn-outline-light">MAS
+                                    INFORMACIÓN</a>
+                            </div>
+                            <div class="col-md-7 offset-md-1 mt-5 mb-5">
+                                <p>HD es esa Comunidad en la que sabes que juntos nos hacemos más fuertes, una misma
+                                    Comunidad sensible, una Comunidad resiliente, una Comunidad que permite que seamos
+                                    uno mismo y que consigamos lo que queremos caminando paso a paso juntos.</p>
+
+                                <p class="mb-0">Estamos convencidos de que trascender es impactar positivamente tu
+                                    entorno, dejando
+                                    un deseo de transformación y reto para las siguientes generaciones, y ese es el
+                                    mayor dividendo que podemos recibir de la vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auto-container">
+                <div class="p-0 pb-5">
+                    <div class="pl-4 pr-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="figure">
+                                    <div class="imagen overflow-hidden">
+                                        <img src="{% static 'images/fibrahd/img1.jpeg' %}" alt="">
+                                    </div>
+                                    <div class="texto bg-light-gray p-4">
+                                        <h3 class="mb-2">ASG</h3>
+                                        <p>Estamos convencidos de que trascender es impactar positivamente tu entorno,
+                                            dejando un deseo de transformación y reto para las siguientes
+                                            generaciones. <br><br></p>
+                                        <a href="{% url 'sustentabilidad' %}" target="_blank"
+                                           class="btn btn-outline-dark mb-2">CONOCE MÁS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="figure">
+                                    <div class="imagen overflow-hidden">
+                                        <img src="{% static 'images/fibrahd/img1.jpeg' %}" alt="">
+                                    </div>
+                                    <div class="texto bg-light-gray p-4">
+                                        <h3 class="mb-2">Nuestro portafolio</h3>
+                                        <p>HD se enfoca en propiedades de dimensiones grandes y medianas, principalmente
+                                            de los sectores industrial, comercial, edificios de oficinas de alta
+                                            categoría y el sector educativo con clientes de calidad.</p>
+                                        <a href="{% url 'propiedades' %}" target="_blank"
+                                           class="btn btn-outline-dark mb-2">PROPIEDADES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="container mt-5 pt-5 mb-5 pb-5">
                 <div class="auto-container">
                     <div class="row clearfix d-flex align-items-center flex-wrap">
@@ -195,7 +261,6 @@
                 </div>
             </div>
 
-
             <div class="auto-container mb-5 pb-5">
                 <div class="parallax p-0 pt-5 pb-5"
                      style="background-image: url({% static 'images/elementia/empleado.jpg' %});background-size:cover;">
@@ -273,16 +338,21 @@
             </div>
 
             <div class="mb-5 pb-5">
-                <div class="col-12 text-center">
-                    <h2 class="font-weight-bold">Casos de Éxito</h2>
-                </div>
+                {#                <div class="col-12 text-center">#}
+                {#                    <h2 class="font-weight-bold">Casos de Éxito</h2>#}
+                {#                </div>#}
                 <div class="col-12 text-center">
                     <div class="container">
-                        <video width="100%" controls loop="loop" playsInline="playsInline"
-                               src="https://investorcloud.s3.amazonaws.com/elementiamateriales/Videos/casos-exito.mp4"
-                               data-autoplay>
-                            <track kind="captions" srcLang="es" src=""/>
-                        </video>
+                        {#                        <video width="100%" controls loop="loop" playsInline="playsInline"#}
+                        {#                               src="https://investorcloud.s3.amazonaws.com/elementiamateriales/Videos/casos-exito.mp4"#}
+                        {#                               data-autoplay>#}
+                        {#                            <track kind="captions" srcLang="es" src=""/>#}
+                        {#                        </video>#}
+
+                        <iframe width="100%" height="50" src="https://www.youtube.com/embed/iKY8C3Hq6pM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

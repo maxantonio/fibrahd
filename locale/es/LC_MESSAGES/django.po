@@ -122,9 +122,7 @@ msgstr "Contacto"
 
 #: frontend/templates/partials/slider_index.html:29
 msgid "slide2_html"
-msgstr ""
-"Somos una de las empresas líderes del sector que ofrece soluciones constructivas "
-"innovadoras que redefinen el concepto de evolución contractiva"
+msgstr "Ofrecemos a los inversionistas un portafolio diversificado, con atractivos dividendos y potencial de plusvalía, permitiendo ser parte de una comunidad creciente a nivel personal y financiero."
 
 #: frontend/templates/partials/slider_index.html:33
 #: frontend/templates/partials/slider_index.html:61
@@ -133,9 +131,7 @@ msgstr "Conoce más"
 
 #: frontend/templates/partials/slider_index.html:58
 msgid "slide3_html"
-msgstr ""
-"Iniciamos una nueva etapa de crecimiento orientado a la generación "
-"incremental de valor."
+msgstr "Somos una comunidad líder en el segmento de bienes raíces de tamaño medio y con atractivos rendimientos."
 
 #: frontend/templates/partials/slider_index.html:86
 msgid "slide4_html"
