@@ -2159,6 +2159,10 @@ table.cobertura.analistas td {
     transform: scale(120%);
 }
 
+.figure .texto {
+    height: 250px;
+}
+
 .figure:hover .texto {
     background-color: #256D6D;
     color: white !important;
@@ -2171,4 +2175,28 @@ table.cobertura.analistas td {
 .figure:hover a {
     color: white !important;
     border: 1px solid white;
+}
+
+@media (max-width: 1300px) {
+    .figure .texto {
+        height: 280px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .figure .texto {
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .figure .texto {
+        height: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .figure .texto {
+        height: auto;
+    }
 }
