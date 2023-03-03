@@ -1109,11 +1109,11 @@ strong, .text-bold, p.text-bold {
     font-weight: bold;
 }
 
-h3.text-center {
-    font-size: 18px;
-    margin-top: 8px;
-    color: white;
-}
+/*h3.text-center {*/
+/*    font-size: 18px;*/
+/*    margin-top: 8px;*/
+/*    color: white;*/
+/*}*/
 
 .be-gray {
     animation: background-fade 3s forwards;
@@ -2175,6 +2175,10 @@ table.cobertura.analistas td {
 .figure:hover a {
     color: white !important;
     border: 1px solid white;
+}
+
+.documents td:last-child {
+    text-align: justify;
 }
 
 @media (max-width: 1300px) {
