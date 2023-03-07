@@ -1,20 +1,13 @@
 import json
-
 from django.conf import settings
-from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from django.http import JsonResponse
-from django.shortcuts import render, redirect
-
-# Create your views here.
+from django.shortcuts import render
 from django.template import loader
-from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.gzip import gzip_page
 from django.views.decorators.http import require_POST
-from django.views.decorators.cache import cache_page
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.utils.translation import gettext as _
-import requests
 
 
 @gzip_page
