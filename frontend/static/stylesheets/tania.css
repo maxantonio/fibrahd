@@ -232,7 +232,6 @@ ul.list3 li {
 /* line 157, D:/begrand/app/assets/stylesheets/tania.css.scss */
 ul.list3 li::before {
     content: "";
-    background-image: url("../images/favicon.png");
     background-size: 15px 15px;
     display: inline-block;
     width: 15px;

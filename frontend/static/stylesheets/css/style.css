@@ -3921,7 +3921,7 @@ body.side-panel-open .body-overlay {
 
 /* line 2821, D:/begrand/app/assets/stylesheets/css/style.css.scss */
 body.side-panel-open:not(.device-xs):not(.device-sm):not(.device-md) .body-overlay:hover {
-    cursor: url("/assets/icons/close-b422fbddba3acd570de94e19bbe6680b348d59a291c55800b4b1e7aaffb193b1.png") 15 15, default;
+    /*cursor: url("/assets/icons/close-b422fbddba3acd570de94e19bbe6680b348d59a291c55800b4b1e7aaffb193b1.png") 15 15, default;*/
 }
 
 /* ----------------------------------------------------------------
