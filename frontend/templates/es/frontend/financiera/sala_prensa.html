@@ -13,57 +13,22 @@
                     <table class="table analistas table-striped mt-4 relev">
                         <thead>
                         <tr>
-                            <th><strong>Fecha</strong></th>
+                            <th style="width: 110px;"><strong>Fecha</strong></th>
                             <th><strong>Titular</strong></th>
-                            <th><strong>Documento</strong></th>
+                            <th style="width: 150px;"><strong>Documento</strong></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>26-06-2015</td>
-                            <td>Conclusión del periodo de estabilización de los Certificados Bursátiles Fiduciarios
-                                Inmobiliarios con clave de pizarra FIBRAHD
-                                15
-                            </td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-06-26-Evento-relevante.pdf"
-                                   target="_blank">Evento relevante </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>19-08-2015</td>
-                            <td>Movimientos Inusitados en la negociación de valores representativos del patrimonio del
-                                Fideicomiso irrevocable identificado con el número F/1523, Serie “FIBRA HD 15”.
-                            </td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-06-26-Evento-relevante.pdf"
-                                   target="_blank">Evento relevante </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>21-08-2015</td>
-                            <td>Canje de Título</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-08-21-Evento-relevante.pdf"
-                                   target="_blank">Evento relevante </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>21-10-2015</td>
-                            <td>FIBRAHD contrata una línea de crédito por $200 millones de pesos</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-10-21-Evento-relevante.pdf"
-                                   target="_blank">Evento relevante </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>22-12-2015</td>
-                            <td>FIBRAHD contrata crédito simple por $200 millones de pesos</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/2015-12-22-Evento-relevante.pdf"
-                                   target="_blank">Evento relevante </a>
-                            </td>
-                        </tr>
+                        {% for evento in eventos %}
+                            <tr>
+                                <td>{{ evento.fecha }}</td>
+                                <td>{{ evento.titulo }}</td>
+                                <td>
+                                    <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/EventosRelevantes/{{ evento.documento }}"
+                                       target="_blank">Evento relevante </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
                         </tbody>
                     </table>
                 </div>
@@ -94,7 +59,7 @@
                     }
                 },
                 "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
-                "bSort": true,
+                "bSort": false,
                 "order": [[0, 'desc']],
                 "dom": "<'row'<'col-lg-4 mb-0 d-flex justify-content-start'f><'col-lg-8 d-flex justify-content-end align-items-center'<'#year.mb-2 mr-5 d-flex align-items-center'>l>>" +
                     "<'row'<'col-sm-12'tr>>" +

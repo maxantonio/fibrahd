@@ -1,3 +1,6 @@
+import json
+
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from django.http import JsonResponse
@@ -674,11 +677,16 @@ def glosario(request):
 
 @gzip_page
 def sala_prensa(request):
+    eventos = settings.BASE_DIR + '/frontend/static/datos/sala_prensa.json'
+    eventos_json_data = open(eventos)
+    eventos = json.load(eventos_json_data)
+
     context = {
         'title': _("Sala de prensa"),
         'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-financiera.jpg'),
         'page': 'sala-prensa',
-        'section': _('Inversionistas')
+        'section': _('Inversionistas'),
+        'eventos': eventos
     }
     return render(request, '{0}/frontend/financiera/sala_prensa.html'.format(request.LANGUAGE_CODE), context)
 
