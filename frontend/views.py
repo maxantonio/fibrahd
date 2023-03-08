@@ -765,11 +765,16 @@ def cotizacion(request):
 
 @gzip_page
 def distribuciones_efectivo(request):
+    distribuciones = settings.BASE_DIR + '/frontend/static/datos/distribuciones_efectivo.json'
+    distribuciones_json_data = open(distribuciones)
+    distribuciones = json.load(distribuciones_json_data)
+
     context = {
         'title': _("Distribuciones de efectivo"),
         'imagen': staticfiles_storage.url('images/fibrahd/headers/header-informacion-bursatil.jpg'),
         'page': 'distribuciones-efectivo',
-        'section': _('Inversionistas')
+        'section': _('Inversionistas'),
+        'distribuciones': distribuciones
     }
     return render(request, '{0}/frontend/bursatil/distribuciones_efectivo.html'.format(request.LANGUAGE_CODE), context)
 

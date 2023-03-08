@@ -50,68 +50,22 @@
                     <table class="table analistas table-striped mt-4 relev">
                         <thead>
                         <tr>
-                            <th><strong>Fecha</strong></th>
+                            <th style="width: 110px;"><strong>Fecha</strong></th>
                             <th><strong>Titular</strong></th>
-                            <th><strong>Documento</strong></th>
+                            <th style="width: 150px;"><strong>Documento</strong></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>28-07-2021</td>
-                            <td>Aviso de distribución de Junio 2021</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-07-21-Distribucion-Junio.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>22-06-2021</td>
-                            <td>Aviso de distribución de Mayo 2021</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-06-22-Distribucion-Mayo.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>21-05-2021</td>
-                            <td>Aviso de distribución de Abril 2021</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-05-21-Distribucion-Abril.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>26-04-2021</td>
-                            <td>Aviso de distribución de Marzo 2021</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-04-26-Distribucion-Marzo.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>30-03-2021</td>
-                            <td>Aviso de distribución de Febrero 2021</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-03-30-Distribucion-Febrero.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>24-02-2021</td>
-                            <td>Aviso de distribución de Enero 2021</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-02-24-Distribucion-Enero.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>29-01-2021</td>
-                            <td>Aviso de distribución de Diciembre 2020</td>
-                            <td>
-                                <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/2021-01-29-Distribucion-Diciembre.pdf"
-                                   target="_blank">Aviso</a>
-                            </td>
-                        </tr>
+                        {% for distribucion in distribuciones %}
+                            <tr>
+                                <td>{{ distribucion.fecha }}</td>
+                                <td>{{ distribucion.titulo }}</td>
+                                <td>
+                                    <a href="https://investorcloud.s3.amazonaws.com/fibrahd/InformacionFinanciera/Distribuciones/{{ distribucion.documento }}"
+                                       target="_blank">Aviso</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
                         </tbody>
                     </table>
                 </div>
@@ -142,7 +96,7 @@
                     }
                 },
                 "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
-                "bSort": true,
+                "bSort": false,
                 "order": [[0, 'desc']],
                 "dom": "<'row'<'col-lg-4 mb-0 d-flex justify-content-start'f><'col-lg-8 d-flex justify-content-end align-items-center'<'#year.mb-2 mr-5 d-flex align-items-center'>l>>" +
                     "<'row'<'col-sm-12'tr>>" +
