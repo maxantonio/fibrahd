@@ -2180,6 +2180,10 @@ table.cobertura.analistas td {
     text-align: justify;
 }
 
+#site-footer a, #site-footer p, #site-footer span {
+    font-size: 15px;
+}
+
 @media (max-width: 1300px) {
     .figure .texto {
         height: 280px;
