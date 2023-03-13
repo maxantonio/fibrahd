@@ -1967,8 +1967,8 @@ blockquote {
     text-transform: uppercase;
     font-size: .625em !important;
     color: #fff;
-    background: #3CA2A2;
-    border: 1px #3CA2A2;
+    background: #99CCFF;
+    border: 1px #99CCFF;
 }
 
 #primary-menu ul li:hover > a {
@@ -2012,7 +2012,7 @@ blockquote {
 }
 
 .inversionistas .list-group-item:hover {
-    background-color: #256D6D;
+    background-color: #006699;
 }
 
 .inversionistas .list-group-item:hover a {
@@ -2163,7 +2163,7 @@ table.cobertura.analistas td {
 }
 
 .figure:hover .texto {
-    background-color: #256D6D;
+    background-color: #006699;
     color: white !important;
 }
 
