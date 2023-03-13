@@ -2338,7 +2338,7 @@ body #side-panel.dark #side-panel-trigger-close a {
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a {
-        color: #eb8705 !important;
+        color: #00B0F0 !important;
     }
 
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul ul a,

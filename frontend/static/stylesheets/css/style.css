@@ -16996,7 +16996,7 @@ body:not(.device-touch) .tagcloud a {
 .page-link,
 .page-link:hover,
 .page-link:focus {
-    color: #3CA2A2;
+    color: #00B0F0;
 }
 
 /* line 12607, D:/begrand/app/assets/stylesheets/css/style.css.scss */
@@ -17053,14 +17053,14 @@ body:not(.device-touch) .tagcloud a {
 .page-item.active .page-link,
 .page-link:focus {
     color: #FFF !important;
-    background-color: #023D3D !important;
-    border-color: #023D3D !important;
+    background-color: #99CCFF !important;
+    border-color: #99CCFF !important;
 }
 
 .page-link:hover {
     color: #FFF !important;
-    background-color: #3CA2A2 !important;
-    border-color: #3CA2A2 !important;
+    background-color: #00B0F0 !important;
+    border-color: #00B0F0 !important;
 }
 
 /* line 12647, D:/begrand/app/assets/stylesheets/css/style.css.scss */

@@ -743,7 +743,7 @@ table.table a {
 }
 
 table.table a:hover {
-    color: #EB8705;
+    color: #00b0f0;
 
 }
 
@@ -1209,14 +1209,14 @@ p {
 
 .btn-primary {
     color: #fff;
-    background-color: #256D6D;
-    border-color: #256D6D;
+    background-color: #006699;
+    border-color: #006699;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #256D6D;
-    border-color: #256D6D;
+    background-color: #00B0F0;
+    border-color: #00B0F0;
 }
 
 .text-gray {
@@ -1451,7 +1451,7 @@ blockquote {
 }
 
 .green-hd {
-    color: #023D3D;
+    color: #00B0F0;
 }
 
 /*---///---///---///---///---///---///---///---///---///---
@@ -1615,7 +1615,7 @@ blockquote {
 }
 
 .at-property-location h4 a {
-    color: #256D6D;
+    color: #00B0F0;
 }
 
 .at-property-location p i {
@@ -1972,15 +1972,15 @@ blockquote {
 }
 
 #primary-menu ul li:hover > a {
-    color: #3CA2A2;
+    color: #00B0F0;
 }
 
 #primary-menu ul ul li.current > a {
-    color: #3CA2A2;
+    color: #00B0F0;
 }
 
 #site-footer a:hover {
-    color: #3CA2A2 !important;
+    color: #00B0F0 !important;
 }
 
 #site-footer h6 {
@@ -2020,11 +2020,11 @@ blockquote {
 }
 
 .tc-fibrahd-light {
-    color: #3CA2A2 !important;
+    color: #00B0F0 !important;
 }
 
 .tc-fibrahd-dark {
-    color: #256D6D !important;
+    color: #00B0F0 !important;
 }
 
 #ihistoria h3 {
@@ -2033,7 +2033,7 @@ blockquote {
 }
 
 .div-content {
-    background-color: #3CA2A2;
+    background-color: #99CCFF;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 2px;
@@ -2052,7 +2052,7 @@ blockquote {
 }
 
 .div-content a:hover {
-    background-color: #256D6D;
+    background-color: #00B0F0;
     color: white;
 }
 
@@ -2061,12 +2061,12 @@ blockquote {
 }
 
 .glossario {
-    background-color: #3CA2A2;
+    background-color: #99CCFF;
     height: 49px;
 }
 
 .gloss-letra {
-    background-color: #256D6D;
+    background-color: #00B0F0;
     color: #f9f9f9;
     margin-left: 5px;
     margin-right: 5px;
@@ -2098,7 +2098,7 @@ blockquote {
 }
 
 table.analistas thead th {
-    background-color: #256D6D;
+    background-color: #00B0F0;
     color: #fff;
     border-radius: 6px;
 }
